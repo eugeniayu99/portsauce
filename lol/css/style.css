@@ -1,0 +1,420 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	
+}
+
+/******* header *******/
+header{
+	background: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+/** header-contants **/
+.header-contants{
+	display: flex;
+	align-items: center;
+	height: 80px;
+	margin-left: 35px;
+	flex: 1
+}
+/* gnb-riot */
+.gnb-riot{
+	cursor: pointer; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.gnb-riot img.riotIcon{
+	width: 75px;
+	filter: brightness(0) invert(1); 
+}
+.gnb-riot img.menuBtn{
+	width: 10px;
+	filter: brightness(0) invert(1);
+}
+.gnb-riot:hover img{
+	filter: brightness(1) invert(0);
+}
+
+
+/* logo */
+h1.logo{
+	margin-left: 20px;
+}
+/* nav */
+nav{
+	margin-left: 40px;
+}
+nav .lnbBox{
+	/* min-width: 1050px; */
+	display: flex;
+    align-items: center;
+    gap: 15px;
+	cursor: pointer;
+}
+nav .lnbBox li{
+	font-family: "Paperozi", sans-serif;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 15px;
+	border-radius: 10px;
+
+}
+nav .lnbBox li:hover{
+	background: rgba(128,128,128,.4);
+	color: rgba(200,170,110);
+}
+nav .lnbBox li img.menuBtn{
+	width: 8px;
+	filter: brightness(0) invert(1);
+}
+nav .lnbBox li img.linkBtn{
+	width: 10px;
+	filter: brightness(0) invert(.5);
+	transform: rotate(45deg);
+}
+/** rightBtn **/
+.rightBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin-right: 35px;
+}
+.rightBtn button > img{
+	width: 25px;
+	filter: brightness(0) invert(1);
+}
+.rightBtn button.search{
+	background: #363636;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rightBtn button.lang > img{
+	width: 20px;
+}
+.rightBtn .login{
+	font-family: "Paperozi", sans-serif;
+	min-width: 77px;
+	padding: 8px 15px;
+	border-radius: 10px;
+	background-color: rgba(11 196 226);
+	transition: all .3s ease-in-out;
+}
+.rightBtn .login:hover{
+	color: #7c7c7c;
+}
+
+/*** 메인 영상 section ***/
+section.playImg{
+	position: relative;
+	overflow: hidden;
+	height: 80dvh;
+    max-height: 1080px;
+}
+
+section.playImg .playImg-textWrap{
+	width: 100%;
+	height: inherit;
+	background: rgba(0,0,0,.3);
+	position: absolute; 
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+section.playImg .playImg-textWrap > p{
+	font-family: "Paperozi", sans-serif;
+	font-style: italic;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2px;	
+}
+section.playImg .playImg-textWrap > button{
+	font-size: 20px;
+	background: #c8aa62;
+	outline: 1px solid #fff;
+    outline-offset: 3px;
+	display: inline-block;
+	padding: 20px 40px;
+	margin-top: 30px;
+	transition: all .5s ease-in-out;
+}
+section.playImg .playImg-textWrap > button:hover{
+	background: #f7d27e;
+}
+
+/*** contents ***/
+.contents{
+	margin: 45px auto 0;
+	max-width: 1520px;
+}
+.contents h2{
+	font-family: "Paperozi", sans-serif;
+	font-style: italic;
+	font-size: 32px;
+	letter-spacing: 1.5px;
+}
+
+/*** 주목할 만한 소식 ***/
+.attentionWrap{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	gap: 30px;
+	margin-top: 40px;
+}
+.contents.attention .attention-item {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	cursor: pointer;
+}
+.contents.attention .attention-item .item-imgBox{
+	overflow: hidden;
+}
+.contents.attention .attention-item .item-imgBox img{
+	width: 100%;
+	height: 100%;
+}
+.contents.attention .attention-item .item-imgBox:hover img{
+	transform: scale(1.1);
+	transition: transform .3s ease-in-out;
+}
+.contents.attention .attention-item .item-catalog{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.contents.attention .attention-item .item-catalog p{
+	font-size: 14px;
+}
+.contents.attention .attention-item .item-catalog p.catalog{
+	color: #c8aa62;
+	font-weight: bold;
+	padding-right: 8px;
+	border-right: 2px solid #afadad;
+}
+.contents.attention .attention-item .item-contents .tit{
+	font-size: 23px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+/*** 챔피언을 선택하세요 ***/
+.contents.champion {
+	display: flex;
+	margin: 80px auto;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.contents.champion .champion-choice{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contents.champion .champion-choice h2{
+	line-height: 50px;
+	font-size: 65px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.contents.champion .champion-choice h2 span{
+	font-family: initial;
+	font-size: 22px;
+	font-style: normal;
+	text-align: center;
+}
+.contents.champion .champion-choice > p{
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+/* champion-choice-linkBox */
+.contents.champion .champion-choice-linkBox{
+	margin-bottom: 50px;
+	display: flex;
+	gap: 15px;
+}
+.contents.champion .champion-choice-linkBox a{
+	color: #000;
+	padding: 20px 30px;
+	display: inline-block;
+	font-size: 18px;
+}
+.contents.champion .champion-choice-linkBox a:hover{
+	filter: opacity(.8);
+	transition: all .3s ease-in-out;
+}
+.contents.champion .champion-choice-linkBox a.more{background: #c8aa6e;}
+.contents.champion .champion-choice-linkBox a.play{background: #59C1DE;}
+
+/* champion-choice-buttonBox */
+.champion-choice-buttonBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+.champion-choice-buttonBox .choice-button{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	filter: opacity(.6);
+	cursor: pointer;
+}
+.champion-choice-buttonBox .choice-button:hover{
+	filter: opacity(1);
+	transform: scale(1.1);
+	transition: all .5s ease-in-out;
+	font-weight: bold;
+}
+.champion-choice-buttonBox .choice-button.on{
+	filter: opacity(1);
+	font-weight: bold;
+}
+.champion-choice-buttonBox .choice-button > img{
+	width: 100px;
+}
+/* 선택한 챔피언 이미지 */
+.champion-view{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.champion-view .chamName{
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+}
+.champion-view .chamNoti{
+	font-weight: bold;
+	color: #919090;
+}
+
+@media (max-width: 1420px) {
+	.contents.champion{
+		flex-direction: column;
+	}
+}
+
+/***  영상섹션 ***/
+.contents.videoCont{
+	max-width: 1920px;
+	overflow: hidden;
+	height: 840px;
+	position: relative;
+}
+.contents.videoCont video{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contents.videoCont > button{
+	background-color: #c8aa62;
+	position: absolute;
+	font-size: 20px;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	min-width: 246px;
+	transform: translate(-50%, -50%);
+	padding: 20px 40px;
+	transition: all .5s ease-in-out;
+}
+.contents.videoCont > button:hover{
+	background: #f7d27e;
+}
+
+/*** footer ***/
+footer .footer-list {
+	background: #292929;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	gap: 10px;
+}
+footer .footer-list li{
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+footer .footer-list li:hover{
+	background: #494949;
+	transition: all .5s ease-in-out;
+}
+
+footer .footer-wrap{
+	background: #000;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px;
+	gap: 20px;
+}
+footer .footer-wrap .footerLogo{
+	width: 80px;
+}
+footer .footer-wrap > p{
+	color: #7c7c7c;
+	margin: 0 auto;
+    max-width: 650px;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+/*햄버거토글*/
+.navmenuBtn {
+	display: none; 
+	flex-direction: column; 
+	gap: 5px;
+}
+.navmenuBtn span{
+	display: inline-block;
+	width: 20px;
+	height:3px;
+	background: #fff;
+}
+
+@media (max-width: 1420px) {
+	.header-contants nav {display: none;}
+	.rightBtn button.search, .rightBtn button.login{display: none;}
+	.navmenuBtn{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		margin-left: auto;
+		margin-right: 20px;
+	}
+}
