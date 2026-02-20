@@ -1,0 +1,44 @@
+/*서브네비*/
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+#subpg_nav{
+    width:100%; height: 50px;
+    border:1px solid #d3d3d3;
+    background: #77a092;
+ } 
+ .resnavWrap{
+    width:1180px; height: 50px;
+    margin:0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.resnavWrap>p{
+    line-height: 50px;
+    font-size: 17px;
+    color: #d8d8d8;
+ }
+.resnavWrap>div{
+    display: flex;
+    line-height: 50px;
+ }
+ .resnavWrap>div>p{
+    font-size: 17px;
+    margin:0 10px;
+    color:#333;
+ }
+ /*subr01a.html*/
+.subr01a_resnav{
+    justify-content: right;
+} 
+.subr01a_resnav>div>p:nth-child(1){font-weight: bold; color: #222;}
+ /*subr01b.html*//*subr01c.html*/
+.subr01b_resnav>div>p:nth-child(2){font-weight: bold; color: #222;}
+/*subr01d.html*/
+.subr01d_resnav>div>p:nth-child(3){font-weight: bold; color: #222;}
+/*subr01e.html*/
+.subr01e_resnav>div>p:nth-child(4){font-weight: bold; color: #222;}
+
+ 
+ 

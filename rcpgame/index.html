@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/contants.css">
+</head>
+<body>
+    <header>
+        <h1 class="mt5 mb5">가위 ! 바위! 보!</h1>
+        <h3>결과는?</h3>
+        <div id="eu-game-result-box" class="mb3" style="display: none;">
+            <h4 id ="eu-game-result-text"class="mb2" >이겼습니다.</h4>
+            <button onclick="gameReset()">다시하기</button>
+        </div>
+    </header>
+    <section>
+        <h2>가위바위보진행창</h2>
+            <div class="com-wrap">
+                <div class="com-first">
+                    <img id="com-first-img" src="./images/com.jpg" alt="com기본이미지">
+                </div>
+            </div>
+            <div class="vs mt5 mb5">VS</div>
+            <div class="user-wrap">
+                <button class="content-srp" onclick="gameStart('가위');">
+                    <img class="content-img content-img01" src="./images/img01.png" alt="가위">
+                </button >
+                <button  class="content-srp" onclick="gameStart('바위');">
+                    <img class="content-img content-img02" src="./images/img02.png" alt="바위">
+                </button >
+                <button  class="content-srp" onclick="gameStart('보');">
+                    <img class="content-img content-img03" src="./images/img03.png" alt="보">
+                </button >
+            </div>
+    </section>
+
+    <script>
+        let mySratus = ""; //사용자선택
+        let comStatus = ""; //컴퓨터결과
+        let resultText = "";
+        let engChange = "";
+
+        function gameReset(){
+            let mySratus = ""; 
+            let comStatus = ""; 
+            let resultText = "";
+
+            document.getElementById("eu-game-result-box").style.display="none";
+            document.getElementById("eu-game-result-text").innerHTML = "";
+            document.getElementById("com-first-img").src='./images/com.jpg';
+        }
+
+        function gameStart(value){
+            mySratus = value;
+            makeComputerSratus();
+            compareResult();
+
+            document.getElementById("eu-game-result-box").style.display="block";
+            // document.getElementById("eu-com-status").innerHTML = comStatus"
+            document.getElementById("eu-game-result-text").innerHTML = resultText;
+            document.getElementById("com-first-img").src=`./images/${engChange}`;
+        }
+
+        function makeComputerSratus(){
+            const gameItem = ["가위","바위","보"];
+            
+            let manipulations = [];
+            
+            for(let i=0; i <= 7; i++) manipulations.push(mySratus); //비길확률80%
+            if(gameItem[0] !== mySratus) manipulations.push(gameItem[0]);
+            //manipulations = [0,0,0,0,0,0,0,0,1,2];
+            if(gameItem[1] !== mySratus) manipulations.push(gameItem[1]);
+            //manipulations = [1,1,1,1,1,1,1,1,2,0];
+            if(gameItem[2] !== mySratus) manipulations.push(gameItem[2]);
+            //manipulations = [2,2,2,2,2,2,2,2,0,1];
+
+            comStatus = Math.random()*10;
+            comStatus = manipulations[Math.floor(comStatus)];
+        }
+
+        function compareResult(){
+            if((mySratus == "가위" && comStatus == "바위")||(mySratus == "바위" && comStatus == "보")||(mySratus == "보" && comStatus == "가위"))resultText ="졌습니다.";
+            else if((mySratus == "가위" && comStatus == "보")||(mySratus == "바위" && comStatus == "가위")||(mySratus == "보" && comStatus == "바위"))resultText ="이겼습니다.";
+            else resultText ="비겼습니다.";
+            /*
+            if(mySratus == "가위" && comStatus == "바위")resultText ="졌습니다.";
+            else if(mySratus == "가위" && comStatus == "보")resultText ="이겼습니다.";
+            else if(mySratus == "바위" && comStatus == "가위")resultText ="이겼습니다.";
+            else if(mySratus == "바위" && comStatus == "보")resultText ="졌습니다.";
+            else if(mySratus == "보" && comStatus == "가위")resultText ="졌습니다.";
+            else if (mySratus == "보" && comStatus == "바위")resultText = "이겼습니다.";
+            */
+
+            if(comStatus == "가위")  engChange="com01.jpg";
+            else if(comStatus == "바위")  engChange="com02.jpg";
+            else if(comStatus == "보")engChange="com03.jpg";
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

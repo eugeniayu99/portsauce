@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'KyoboHand'; 
+    box-sizing: border-box;
+}
+ul, li{list-style: none;}
+body{
+    width:100%;
+    height: 100%;
+    background-color: rgb(196, 219, 255);
+}
+.container{
+    position: relative;
+    width:1430px;
+    height: 100%;
+    margin: 30px auto;
+}
+
+.hidden{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*랜덤이미지*/
+.img-bg{
+    width:500px;
+    height: 600px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    z-index: -9;
+}
+#random-img{
+    width:450px;
+    height: 450px;
+    margin: 25px 0 0 25px;
+}
+
+/*clock*/
+#clock{
+    width:880px;
+    font-size: 40px;
+    text-align: center;  
+}
+
+
+.section-wrap{
+    width:880px;
+    height: 600px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+/*date*/
+.date-box{
+    background-color: rgb(255, 225, 225);
+}
+#date-tit{
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+/*날씨*/
+#weather{
+    background-color: #ccb5fff7;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#weather span{
+    display: block;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+#weather span img{
+    width:100%;
+    height: 100%;
+}
+
+/*bottom-container*/
+.bottom-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+}
+
+/*달력*/
+.calendar-wrap{
+    width:420px;
+    height: 290px;
+}
+
+
+/*금주의 목표*/
+.gocal-wrapper{
+    width:420px;
+    height: 480px;
+}
+.goal-wrap {
+    margin-top: 45px;
+    height: 10px;
+}
+.goal-wrap > h3{
+    margin: 15px;
+    text-align: center;
+}
+.goal-wrap > div{
+    background-color: rgb(196, 219, 255);
+    position: relative;
+    height: 100px;
+
+}
+#weekGoal{
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+
+}
+#goal-form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#goal-form input{
+    font-size: 20px;
+}
+

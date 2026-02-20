@@ -1,0 +1,189 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+/*로그인LTX섹션*/
+.ltx{margin-top: 100px;}
+.ltx>h5{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color:#4d4d4d;
+}
+.contents{
+    width:600px;
+    height:400px;
+    margin:100px auto 150px;
+    background: #498eb9;
+}
+ul.tab_menu{width:600px;}
+
+ul.tab_menu>li{
+    float:left;
+    width:300px;
+    background:#498eb9;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+}
+ul.tab_menu::after{
+    content:'';
+    display:block;
+    clear:both;
+    width:0; height:0;
+    visibility:hidden;
+}
+
+ul.tab_menu>li.active{
+    background: white;
+    border-top:1px solid #498eb9;
+    color:#498eb9;
+    font-weight: bold;
+}
+ul.tab_menu>li:first-child.active{
+    border-left:1px solid #498eb9;
+}
+ul.tab_menu>li:last-child.active{
+    border-right:1px solid #498eb9;
+}
+.tab_contents{
+    position: relative;
+}
+.tab_contents>div{
+    position:absolute;
+    background:#fff;
+    border-bottom:1px solid #498eb9;
+    border-left:1px solid #498eb9;
+    border-right:1px solid #498eb9;
+    box-sizing: border-box;
+    padding:20px;
+    color:#4d4d4d;
+    height:350px; width:600px;
+    line-height: 2;
+}
+/*로그인ltx_log*/
+.idpw{
+    display: flex; 
+    justify-content: end;
+    margin-top: 20px;
+}
+.idpw>a{
+    display: block;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    color:#4d4d4d;
+    font-size: 15px;
+}
+.idpw>a:hover{font-weight: bold; color:#77a092;}
+.idpw>a:first-child{border-right:2px solid #aaaaaa;}
+.idpwBox{margin-left:70px; margin-top: 5px;}
+.idpwBox>form>p>input{
+    margin-top: 30px;
+    margin-left: 20px;
+    width:300px; height: 30px;
+}
+.idpwBox>form>p:nth-of-type(2)>input{
+    margin-top: 30px;
+    margin-left: 7px;
+    width:300px; height: 30px;
+}
+.idpwBox>form>input{
+    display: block;
+    color:#fff;
+    background: #498eb9;
+    border:1px solid #498eb9;
+    width:100px; height: 30px;
+    margin: 0 160px;
+    text-align: center;
+    margin-top: 30px;
+}
+.idpwBox>form>input:hover{
+    color:#498eb9;
+    background: #fff;
+    font-weight:bold;
+}
+.log_ju>a{ 
+    display: block; 
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.log_ju>a:hover{font-weight: bold; color:#77a092;}
+
+.sns_log{display: flex; justify-content: center;}
+.sns_log>a>img{width:25px; margin: 5px;}
+
+.tab_contents>div.active{z-index:9999;}
+
+/*비로그인BCo섹션*/
+/*비로그인예약조회ltx_nlog*/
+#ltx_nlog>form>input{
+    display: block;
+    font-size: 17px; 
+    width:400px; 
+    height: 30px; 
+    margin: 90px auto;     
+}
+#ltx_nlog>form>input:nth-of-type(2){
+    display: block;
+    width:150px; height: 35px;
+    background: #498eb9;
+    border: 2px solid #498eb9;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+#ltx_nlog>form>input:hover{
+    background: #fff;
+    color: #498eb9;
+    font-weight: bold
+}
+
+
+
+/*mobile*/
+@media all and (max-width:960px) {
+	/*로그인LTX섹션*/
+    .ltx{margin-top: 50px;}
+    .ltx>h5{ font-size: 35px;}
+    .contents{
+        width:100%;
+        height:400px;
+        margin:100px auto 150px;
+    }
+    ul.tab_menu{width:100%;}
+    ul.tab_menu>li{width:50%; }
+    .tab_contents>div{
+        padding:20px; 
+        width:100%;
+    }
+    /*로그인ltx_log*/
+    
+    .idpwBox{margin:0 auto;}
+    .idpwBox>form{width:100%; margin:0 auto;}
+    .idpwBox>form>p{text-align: center;}
+    .idpwBox>form>p>input{
+         margin-left: 10px;
+    }
+    
+    .idpwBox>form>input{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+
+
+    
+}
+
+    
+    

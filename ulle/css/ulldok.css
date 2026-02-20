@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+@import "./drop.css";
+
+.sub_pg{background: url('../images/ull06.jpg')no-repeat center 40%/cover ;}
+
+
+/*modile*/
+@media all and (max-width:960px) {
+    .ulleungdo{
+        width:100%;
+        margin: 0 auto;
+    }
+    .ulleungdo>img{
+        width:800px;
+        position: relative;
+        left:50%; transform: translateX(-50%);
+    }
+}
+
+/*pc*/
+@media all and (min-width:960px) {
+    /*u01.html*/
+    .ulleungdo{
+        width:1000px;
+        margin: 0 auto 150px;
+    }
+    .ulleungdo>img{
+        width:1000px;
+        margin: 50px 0 20px;
+        position: relative;
+        left:50%; transform: translateX(-50%);
+    }
+    .ulleungdo>p{
+        width:1000px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /*u02.html*/
+
+
+}

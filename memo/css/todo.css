@@ -1,0 +1,47 @@
+/*todolist*/
+.todo-wrapper{
+    width:420px;
+    height: 480px;
+
+}
+
+.todo-wrapper> h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#todo-form input{
+    width:420px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(196, 219, 255);
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+#todo-form input:focus{
+    outline: none;
+}
+
+#todo-list{
+    height: 400px;
+    border: 3px dotted rgb(196, 219, 255);
+    overflow: auto;
+}
+
+#todo-list li{
+    display: flex;
+    padding-left: 25px;
+}
+#todo-list li span{
+    display: block;
+    width:350px;
+}
+
+#todo-list button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

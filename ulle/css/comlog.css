@@ -1,0 +1,47 @@
+@charset "utf-8";
+body{
+    font-family: 'NanumBarunGothic';
+    background:url('../images/airpo02.jpg') no-repeat left top/cover;
+}
+.contain{
+    width:470px;
+    height: 450px;
+    background: rgba(119,160,146,0.9);
+    box-shadow: 2px 2px 12px #333;
+    position: absolute;
+    left:50%; top:250px;
+    transform: translateX(-50%);
+}
+img{margin: 30px 0px 0px 100px;}
+form{margin-top:5px;}
+legend{color:#f8f8f8; font-size: 1.2rem; text-align: center;
+font-weight: bold;}
+fieldset{
+    width:350px;
+    height: 250px;
+    border:1px solid #f8f8f8;
+    margin-left:60px;
+    color: #f8f8f8;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+input:nth-of-type(1){
+    width:200px; height: 25px;
+    margin-left: 5px;
+}
+input:nth-of-type(2){
+    width:200px; height: 25px;
+    margin-left: 21px;
+}
+input:nth-of-type(3){
+    margin-left: 120px;
+    width:100px; height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input:nth-of-type(3):hover{
+    background: #4d4d4d;
+    color: #f8f8f8;
+}

@@ -1,0 +1,299 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./layout.css";
+@import "./sublayout.css";
+
+/*k00공통영역*/
+.sub_pg{
+    width:100%; height: 250px;
+    margin: 0 auto ;
+}
+.sub_pg>h5{ 
+    color:#333;
+    font-weight: bold;
+    line-height: 250px;
+    background: none;
+}
+/*제목영역배경*/
+.sub_pg{background: url('../images/dokdo04.jpg')no-repeat center 58%/cover ;}
+
+/*k01.html*/
+.k01>div{
+    width:1000px; margin: 50px auto;
+    padding: 0px 50px 100px;
+    border-bottom: 3px solid #498eb9;
+    border-top: 3px solid #498eb9;
+}
+.k01>div>a{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 50px auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #498eb9;
+}
+.k01>div>a>p{color:#333;}
+
+.k01>div>a>p:nth-of-type(2){
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+
+/*k02.html*/
+.k02{
+    width:1000px; margin: 50px auto;
+}
+.k02>div{
+    margin: 1px auto;
+    padding: 0px 50px;
+}
+.qbox{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #498eb9;
+    padding: 20px 50px;
+}
+.qbox:nth-of-type(1){
+    border-top: 2px solid #498eb9;
+}
+.abox>p{font-size: 18px; font-weight: bold;}
+
+.abox{
+    height: 180px;
+    border-bottom: 2px solid #498eb9;
+    padding: 40px 50px;
+    display: none;
+}
+.qbox>p{font-size: 18px; font-weight: bold;}
+.qbox>p:nth-of-type(2){
+    cursor: pointer;
+    color:#77a092;
+}
+.aboxAni{
+	transform:rotate(180deg);
+    transition: all .1s;
+}
+
+
+
+/*k03.html*/
+.k03{width:1000px; margin: 50px auto 70px; height: 600px}
+
+.contents{
+    width:1000px;
+    height:500px;
+    margin:50px auto 150px;
+    
+}
+ul.tab_menu{width:200px;}
+    
+ul.tab_menu>li{
+    float:left;
+    width:100px;
+    background:#ffffff;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    box-sizing: border-box;
+    border:1px solid #498eb9;
+    font-weight: bold;
+    cursor: pointer;
+    color:#498eb9;
+    font-size: 25px;
+}
+ul.tab_menu::after{
+    content:'';
+    display:block;
+    clear:both;
+    width:0; height:0;
+    visibility:hidden;
+}
+
+ul.tab_menu>li.active{
+    background: #498eb9;
+    border-top:1px solid #498eb9;
+    color:#fff;
+    font-weight: normal;
+}
+ul.tab_menu>li:first-child.active{
+    border-left:1px solid #498eb9;
+}
+ul.tab_menu>li:last-child.active{
+    border-right:1px solid #498eb9;
+}
+.tab_contents{
+    position: relative;
+}
+.tab_contents>div{
+    position:absolute;
+    background:#498eb9;
+    border:1px solid #498eb9;
+    box-sizing: border-box;
+    padding:20px;
+    color:#4d4d4d;
+    height:500px; width:1000px;
+    line-height: 2;
+}
+.tab_contents>div.active{z-index:9999;}
+
+/*회원문의*/
+.logQ{
+   /* background: pink;*/
+    margin: 30px auto;
+    width:800px; height: 400px;
+}
+.logQ>form>p:nth-of-type(1){
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.logQ>form>p:nth-of-type(1)>input{
+    width:700px;
+    height: 30px;
+    margin-left: 50px;
+}
+.logQ>form>div{
+    display: flex;
+    justify-content: start;
+}
+.logQ>form>div>p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.logQ>form>div>textarea{
+    width:700px;
+    height: 300px;
+    margin-left: 55px;
+}
+.logQ>form>p:nth-of-type(2){
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20px;
+    float: left;
+}
+.logQ>form>p:nth-of-type(2)>input{
+    margin-left: 10px;
+}
+.logQ>form::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+.logQ>form>p:nth-of-type(3){
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.logQ>form>p:nth-of-type(3)>input{
+   cursor: pointer;
+   width:70px; font-weight: bold; 
+}
+/*비회원문의*/
+.nlogQ>form::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+.nlogQ{
+     margin: 10px auto;
+     width:800px; height: 400px;
+ }
+ .nlogQ>form>p:nth-of-type(1){
+     font-size: 20px;
+     color: #fff;
+     margin-bottom: 10px;
+ }
+ .nlogQ>form>p:nth-of-type(1)>input{
+     width:700px;
+     height:30px;
+     margin-left: 32px;
+ }
+ .nlogQ>form>p:nth-of-type(2){
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.nlogQ>form>p:nth-of-type(2)>input{
+    width:700px;
+    height: 30px;
+    margin-left: 50px;
+}
+ .nlogQ>form>div{
+     display: flex;
+     justify-content: start;
+ }
+ .nlogQ>form>div>p{
+     font-size: 20px;
+     color: #fff;
+     margin-bottom: 25px;
+ }
+ .nlogQ>form>div>textarea{
+     width:700px;
+     height: 280px;
+     margin-left: 55px;
+ }
+ .nlogQ>form>p:nth-of-type(3){
+     font-size: 17px;
+     color: #fff;
+     margin-top: 20px;
+     float: left;
+ }
+ .nlogQ>form>p:nth-of-type(3)>input{
+     margin-left: 10px;
+ }
+ .nlogQ>form>p:nth-of-type(4){
+     float: right;
+     margin-top: 20px;
+     cursor: pointer;
+}
+.nlogQ>form>p:nth-of-type(4)>input{
+    cursor: pointer;
+    width:70px; font-weight: bold; 
+}
+ 
+
+
+
+@media all and (max-width:960px) {
+    #subpg_nav{
+        width:100%; height: 50px;
+        border:1px solid #77a092;
+    } 
+    .sub_pg>h5{ 
+        font-size: 35px;
+    }
+    /*k01.html*/
+    .k01>div{
+        width:100%; margin: 50px auto;
+        padding: 0px 0px 100px;
+    }
+    .k01>div>a{width: 90%;}
+    .k01>div>a>p{
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+    /*k02.html*/
+    .k02{
+        width:100%; margin: 0px  auto;
+    }
+    .k02>div{
+        padding: 0 0;
+    }
+    .abox>p{font-size: 16px;}
+    .qbox{padding: 20px 5%;}
+    
+    .qbox>p{
+        font-size: 16px; font-weight: bold;
+    }
+    
+    
+}

@@ -1,0 +1,67 @@
+.year-month{
+    text-align: center;
+    font-weight: 800;
+}
+.cal-nav{
+    text-align: center;
+    padding: 10px 0;
+}
+.cal-nav button{
+    background-color: rgb(196, 219, 255);
+    border: #fff;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-weight: 800;
+
+}
+.cal-nav button:nth-child(2){
+    background:none;
+    border: none;
+    color:rgb(173, 204, 255);
+    width:40px;
+}
+
+
+.days{
+    display: flex;
+    justify-content: space-around;
+     
+}
+.day{
+    width:60px;
+    text-align: center;
+    font-weight: 800;
+    padding: 7px;
+}
+
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid rgb(173, 204, 255);
+    border-right: 1px solid rgb(173, 204, 255);
+  }
+
+.date{
+    width: calc(100% / 7);
+    padding: 7px;
+    text-align: center;
+    border-bottom: 1px solid rgb(173, 204, 255);
+    border-left: 1px solid rgb(173, 204, 255);
+}
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+  color: #ff0000;
+}
+.day:nth-child(7n),
+.date:nth-child(7n) {
+  color: #0051ff;
+}
+
+.other {
+    opacity: .2;
+}
+
+
+  

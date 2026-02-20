@@ -1,0 +1,462 @@
+@charset "utf-8";
+/*파일명 : mobile.css*/
+
+@media all and (max-width:1024px){
+	/*1024px 이하 MOBILE*/
+	body{font-family: 'Roboto', 'Noto Sans KR', sans-serif;}
+	.wrap{
+		width:100%; 
+		position:relative;
+	}
+	header.header{
+		background:rgba(0,0,0,0.9); 
+		border-bottom:2px solid #fff;
+		z-index:9999;
+		position:fixed;
+		top:0;
+	}
+	.logo>a>img{
+		width:80px;
+		margin-right:20px;
+	}
+	.join,.login{display:none;}
+	.header>nav{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		height:80px;
+	}
+	#menu_btn{
+		display:block;
+		width:50px;
+		margin-left:20px;
+	}
+	#menu_btn>span{
+		display:block;
+		background:#fff;
+		width:100%;
+		height:4px;
+		transition:all .3s;
+	}
+	#menu_btn>span:nth-child(2){
+		margin:15px 0px;
+	}
+	
+	/*햄버거버튼 관련 가상선택자*/
+	.menuAni{
+		background:transparent;
+		position:relative;
+		width:100%;
+		z-index:99;
+	}
+	#menu_btn.menuAni>span{
+		background:transparent;
+		transition:all .3s;
+	}
+	.menuAni::before{
+		content:'';
+		display:block;
+		width:50px; height:4px;
+		top:20px; left:0;
+		text-align:center;
+		transform:rotate(-45deg);
+		position:absolute;
+		background:#fff;
+	}
+	.menuAni::after{
+		content:'';
+		display:block;
+		width:50px; height:4px;
+		top:20px; left:0;
+		text-align:center;
+		transform:rotate(45deg);
+		position:absolute;
+		background:#fff;
+	}
+	.menu{
+		width:100%;
+		margin:80px auto;
+		position:absolute;
+		display:none;
+		background:rgba(0,0,0,0.8); /*★*/
+		top:0;
+	}
+	.menu>li:first-child>a{
+		border-top:2px solid #fff;
+	}
+	.menu>li>a, .submenu>li>a{
+		display:block;
+		padding:15px 0px 10px 30px;
+		border-bottom:1px solid rgb(255,255,255);
+		width:100%;
+		transition:all .1s;
+	}
+	.menu>li>a:hover,.submenu>li>a:hover{
+		background:rgba(225,225,225,0.5);
+	}
+	.submenu{display:none;}
+	
+	.submenu>li>a{
+		padding:10px 0px 10px 50px;
+	}
+	.submenu>li>a::before{content:'- ';}
+
+
+	/*비주얼배너*/
+	.wrap{position:relative;}
+	.back{
+		width:100%;
+		height:750px;
+		overflow:hidden;
+		z-index:1;
+		position:relative;
+
+	}
+	.back>li{
+		position:absolute;
+		width:100%; height:750px;
+		background:url() no-repeat top center/cover;
+		transition:all .4s;
+	}
+	.back>li:nth-child(1){background-image:url('../images/main04.jpg'); opacity:1;}
+	.back>li:nth-child(2){background-image:url('../images/main02.jpeg'); opacity:0;}
+	.back>li:nth-child(3){background-image:url('../images/main01.jpeg'); opacity:0;}
+
+	.back>li.top{
+		opacity:1;
+		z-index:3 !important;
+		transition:all .4s;
+	}
+	
+
+	/*sec02*/
+	.sec02{
+		width:100%;
+		height:720px;
+	}
+	.sec02>.box{
+		width:100%;
+		height:180px;
+	}
+	.sec02>.box>a{display:block;}
+	.sec02>.box>a>img{
+		width:350px; height:auto;
+		margin-top:55px;
+		margin-left:25px;
+	}
+	.sec02>.box03>a>p{
+		font-size:2.5em;
+		padding-top:65px;
+		padding-left:33px;
+		font-family: 'Bakbak One', cursive;
+	}
+	.sec02>.box04>a>img{width:430px;}
+	.sec02>.box02>a>img{margin-top:65px;}
+	.sec02>.box04>a>img{margin-top:65px;}
+	.sec02>.box01{
+		background:#e22f37;
+	}
+	.sec02>.box02{
+		background:#0076c7;
+	}
+	.sec02>.box03{
+		background:#02bf86;
+	}
+	.sec02>.box04{
+		background:#fc6c39;
+	}
+	.sec02>.box:hover{background:#000;}
+	
+	/*sec3 sns*/
+	.sec03{
+		width:100%;
+		margin:0 auto;
+		height:900px;
+		position:relative;
+	}
+	
+	.sec03>h3{
+		font-size:2.3rem;
+		font-weight:bold;
+		text-align:center;
+		padding-top:120px;
+		font-family: 'Bakbak One', cursive;
+	}
+	.sec03>p.p01{
+		text-align:center;
+		padding-top:10px;
+		font-weight:bold;
+		color:#4c4c4c;
+	}
+	.yutube{
+		position:absolute;
+		top:500px;
+		width:100%;
+		
+	}
+	.yutube>h4{
+		font-size:2rem;
+		font-weight:bold;
+		padding-top:80px;
+		color:red;
+		text-align:center;
+		font-family: 'Bakbak One', cursive;
+	}
+	.yutube>p{
+		width:100%;
+		padding-top:20px;
+		color:#4c4c4c;
+		padding-top:40px;
+		line-height:20px;
+		text-align:center;
+		font-family: 'Song Myung', serif;
+		font-weight:bold;
+	}
+	.yutube>div>a{
+		display:block;
+		margin:0 auto;
+		width:250px;
+		height:30px;
+		line-height:30px;
+		background:red;
+		color:#fff;
+		text-align:center;
+		border-radius:10px;
+		margin-top:30px;
+		
+	}
+	.yutube>div>a:hover{
+		background:#fff;
+		font-weight:bold;
+		border:2px solid red;
+		box-sizing:border-box;
+		color:black;
+	}
+	
+	.sns{float:left;
+		width:30%;
+		text-align:center;
+		margin:70px 0;		
+	}
+	.face{margin:70px 5% 0;}
+	
+	.sns>a>img{width:80px;}
+	.sns>h6{
+		margin:20px auto 10px;
+		font-weight:bold;
+		font-size:1.3rem;
+	}
+	.snsa>p{
+		color:#4c4c4c;
+	}
+
+	.sec03::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+	}
+
+	/*sec04 배너*/
+	.sec04{
+		width:100%;
+		margin:0 auto;
+		height:600px;
+	}
+	.conleft{
+		width:100%;
+		height:300px;
+		background:url('../images/bannercenter02.jpg') no-repeat center top/cover;
+		
+	}
+	.conright{
+		width:100%;
+		height:300px;
+		background:black;
+	}
+	.conright>h4{
+		font-size:1.7rem;
+		font-weight:bold;
+		text-align:center;
+		padding-top:60px;
+		color:#fff;
+	}
+	.conright>p{
+		width:90%;
+		padding-top:40px;
+		margin:0 auto;
+		color:gray;
+		text-align:center;
+		line-height:25px;
+		font-size:0.9rem;
+	}
+	
+	/*sec05 소식*/
+	.sec05{
+		width:100%;
+		margin:0px auto;
+		padding-bottom:100px;
+		position:relative;
+	}
+	.sec05>h3{
+		display:block;
+		font-size:2.3rem;
+		font-weight:bold;
+		text-align:center;
+		padding-top:100px;
+		font-family: 'Bakbak One', cursive;
+	}
+	.sec05>.p01{
+		text-align:center;
+		padding:20px 0 50px;
+		font-weight:bold;
+		color:#4c4c4c;
+	}
+	.sec05>.contain>.con04 {display:none;}
+	.con01>a>img{
+		width:100%;
+	}
+	.conimg>a>img{width:100%; height:70%;}
+	.conimg{width:46%; margin:20px 2% 0; }
+	.contain{
+		width:100%;
+		 height:auto;
+		display:flex;
+		flex-flow:wrap;
+		justify-content:flex-start;
+	}
+	.conimg>h4{
+		width:100%;
+		font-size:1.5rem;
+		font-weight:bold;
+		padding:10px 0px 20px;
+		text-align:center;
+		font-family: 'Song Myung', serif;
+	}
+	.conimg>p{
+		width:100%;
+		color:#8c8c8c;
+		text-align:center;
+		font-weight:bold;
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+	.linetop06{
+		width:60%;
+		margin:60px auto 30px;
+		border-top:3px solid #888;
+	}
+	.linebottom06{
+		width:60%;
+		margin:10px auto 80px;
+		border-top:3px solid #888;
+	}
+	/*caption*/
+	.con01{position:relative;}
+	.sec05>.con01>a>.info{
+		width:100%; height:80px;
+		background:rgba(0,0,0,0.8);
+		z-index:9999;
+		position:absolute; 
+		bottom:-20px;
+		opacity:0;
+		transition:all .3s;
+	}
+	.sec05>.con01>a>.info>p{
+		text-align:center;
+		margin-top:30px;
+		font-size:1.1rem;
+	}
+	.sec05>.con01>a:hover .info{
+	opacity:1;
+	transform:translateY(-20px);
+	}
+	
+	
+	
+	/*sec06 선수*/
+	.sec06{
+		width:100%;
+		margin:100px auto 20px;
+		height:700px;
+		position:relative;
+	}
+	.top02,.top03{display:none;}
+	.topimg01{
+		width:300px; height:300px;
+		background:url('../images/top01.png') no-repeat center center;
+		z-index:99999;
+		margin:0 auto;
+		}
+		
+	.txt01{
+		width:68%;
+		height:380px;
+		margin:0 15%;
+		background:#111;
+		z-index:-9999;
+		position:absolute;
+		border-radius:100px;
+		top:200px;
+		font-family: 'Yeon Sung', cursive;
+		}
+	.top01>.txt01>h6>span{font-family: 'Bakbak One', cursive; font-size:2em;}	
+
+	.top01>.txt01>h5{
+		margin-top:150px;
+		font-weight:bold;
+		font-size:1.5rem;
+		text-align:center;
+		text-decoration:underline;
+		color:#fff;
+	}
+	.top01>.txt01>h6{
+		margin-top:20px;
+		font-size:1.1rem;
+		text-align:center;
+		color:#d4d4d4;
+	}
+	.top01>.txt01>p{
+		margin-top:20px;
+		text-align:center;
+		color:#d4d4d4;
+		line-height:23px;
+		font-weight:bold;
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+	
+	
+	/*푸터영역*/
+	.fotlist>li{
+		display:inline-block;
+		padding:0 10px;
+		border-left:1px solid #fff;
+		margin-top:20px;
+	}
+	.fotlist>li:first-child{
+		border-left:none;
+	}
+	.fotlist{
+		width:480px; 
+		text-align:center;
+		margin:0 auto;		
+	}
+	.fotlist>li>a{
+		display:block;
+		text-align:center;
+		font-size:12px;
+	}
+	/*ani*/
+	.conimg>a>img:hover{
+		transform: translateY(-8px);
+		transition:all .4s;
+		box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+	}
+	.topimg01:hover,.topimg02:hover,.topimg03:hover{
+		transform: translateY(-10px);
+		transition:all .4s;
+	}
+
+	
+
+}

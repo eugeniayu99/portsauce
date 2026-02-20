@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./layout.css";
+@import "./sublayout.css";
+
+@media all and (min-width:960px) {
+    .cuts_sec{width:100%; margin:0 auto;}
+    .cuts_sec>div:nth-of-type(2){width:876px; margin:0 auto;}
+    .cuts_not{
+        padding: 50px 0;
+        background: url('../images/dokdo04.jpg')no-repeat center center/cover;
+    }
+    .cuts_not>a{ 
+        display:block; 
+        text-align: right;
+        font-size: 20px; 
+        width:780px; 
+        margin: 0 auto;
+        color:#333;
+        font-weight: bold;
+    }
+    .cuts_not>a:hover{ 
+        color:#000;
+    }
+    .cuts_not>h6{
+        font-size: 35px;
+        font-weight: bold;
+        width:780px;
+        margin: 0 auto;
+    }
+    .cuts_not>div{
+        width:780px; margin: 0 auto;
+        padding: 10px 50px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .cuts_not>div>a{
+        
+        display: flex;
+        justify-content: space-between;
+        width:780px;
+        margin: 50px auto;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #498eb9;
+    }
+    .cuts_not>div>a>p{
+        color:#fff;
+        
+    }
+    
+
+
+    .cuts_sec::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    .cuts_box>a{
+        display: block;
+        float: left;
+        width:400px;
+        height: 200px;
+        background: #498eb9;
+        border: 2px solid #498eb9;
+        box-sizing: border-box;
+        margin: 50px 0px;
+        text-align: center;
+        color:#fff;
+    }
+    .cuts_box>a:hover{
+        color:#498eb9;
+        background: #fff;
+    }
+    .cuts_box:nth-of-type(2)>a{float: right;}
+    .cuts_box>a>h6{
+        font-size: 30px; 
+        margin: 40px 0 30px;
+        font-weight: bold;
+    }
+    .cuts_box>a>p{
+        line-height: 30px;
+        margin: 0 50px;
+        font-weight: normal;
+        font-size: 15px;
+        
+    }
+}
+/*mb*/
+@media all and (max-width:960px) {
+
+    .cuts_sec{width:100%; margin:0 auto 100px;}
+    .cuts_sec>div:nth-of-type(2){width:100%; margin:0 auto;}
+    .cuts_not{
+        padding: 50px 0;
+        background: url('../images/dokdo04.jpg')no-repeat center center/cover;
+    }
+    .cuts_not>a{ 
+        display:block; 
+        text-align: right;
+        font-size: 20px; 
+        width:90%; 
+        margin: 0 auto;
+        color:#333;
+        font-weight: bold;
+    }
+    .cuts_not>a:hover{ 
+        color:#000;
+    }
+    .cuts_not>h6{
+        font-size: 35px;
+        font-weight: bold;
+        width:90%;
+        margin: 0 auto;
+    }
+    .cuts_not>div{
+        width:90%; margin: 0 auto;
+        padding: 10px 5%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .cuts_not>div>a{
+        
+        display: flex;
+        justify-content: space-between;
+        width:90%;
+        margin: 50px auto;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #498eb9;
+    }
+    .cuts_not>div>a>p{
+        color:#fff;
+        overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+    }
+   
+    .cuts_box>a{
+        display: block;
+        width:100%;
+        height: 200px;
+        background: #498eb9;
+        border: 2px solid #498eb9;
+        box-sizing: border-box;
+        margin: 5px 0px;
+        text-align: center;
+        color:#fff;
+    }
+    .cuts_box>a:hover{
+        color:#498eb9;
+        background: #fff;
+    }
+ 
+    .cuts_box>a>h6{
+        font-size: 30px; 
+        margin: 40px 0 30px;
+        font-weight: bold;
+    }
+    .cuts_box>a>p{
+        line-height: 30px;
+        margin: 0 50px;
+        font-weight: normal;
+        font-size: 15px;
+        
+    }
+}

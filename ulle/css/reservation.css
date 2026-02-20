@@ -1,0 +1,414 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+/*subr01.html*/
+
+
+
+/*mobile*/
+@media all and (max-width:960px) {
+	/*subr01.html*/
+    .subr01{margin-top: 50px;}
+    .contents{
+        width:100%;
+        height:800px;
+        margin:0px auto 100px;
+        background: #498eb9;
+    }
+    ul.tab_menu{width:100%;}
+    
+    ul.tab_menu>li{
+        float:left;
+        width:50%;
+        background:#498eb9;
+        text-align:center;
+        height:50px;
+        line-height:50px;
+        box-sizing: border-box;
+        cursor: pointer;
+        color:#fff;
+        font-size: 20px;
+    }
+    ul.tab_menu::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    
+    ul.tab_menu>li.active{
+        background: white;
+        border-top:2px solid #498eb9;
+        color:#498eb9;
+        font-weight: bold;
+    }
+    ul.tab_menu>li:first-child.active{
+        border-left:2px solid #498eb9;
+    }
+    ul.tab_menu>li:last-child.active{
+        border-right:2px solid #498eb9;
+    }
+    .tab_contents{
+        position: relative;
+    }
+    .tab_contents>div{
+        position:absolute;
+        background:#fff;
+        border-bottom:2px solid #498eb9;
+        border-left:2px solid #498eb9;
+        border-right:2px solid #498eb9;
+        box-sizing: border-box;
+        padding:20px;
+        color:#4d4d4d;
+        height:750px; width:100%;
+        line-height: 2;
+    }
+
+    .tab_contents>div.active{z-index:9999;}
+    
+
+    #bokig{
+        display:flex; 
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    #bokig>img:nth-of-type(1){
+        display: none;
+    }
+    /*드롭다운 출발지*/
+    #bok_dep{
+        width:45%;
+    }
+	#bok_dep>li{
+        background:#498eb9; 
+        cursor:pointer;
+        padding:5px; 
+        border:#498eb9 1px solid; 
+        position:relative;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+	#bok_dep>li.choice ~ li{display:none; z-index: 99;}
+	#bok_dep>li.choice::after{
+		content:'▼';
+		color:#fff;
+		position:absolute;
+		right:10px;
+		transition: all .2s;
+	}
+    #bok_dep:hover>li.choice::after{color:#77a092;}
+	#bok_dep>li:not(.choice):hover{background: #fff; color:#77a092}
+
+    /*드롭다운 도착지*/
+    #bok_des{width:45%;}
+	#bok_des>li{
+        background:#498eb9; 
+        cursor:pointer;
+        padding:5px; 
+        border:#498eb9 1px solid; 
+        position:relative;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+    #bok_des>li:not(.choice):hover{background: #fff; color:#77a092}
+	#bok_des>li.choice ~ li{display:none; z-index: 99;}
+	#bok_des>li.choice::after{
+		content:'▼';
+		color:#fff;
+		position:absolute;
+		right:10px;
+		transition: all .2s;
+	}
+    #bok_des:hover>li.choice::after{color:#77a092;}
+	
+    /*가는날 오는날*/
+    #bokig>p{
+        width:45%; height: 50px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+      
+    }
+    #bokig>p:nth-of-type(2){
+        text-align: center;
+    }
+    .bor_dt{
+        width:100%; height: 50px;
+        font-size: 22px; 
+        background:#fff;
+        border:2px solid #498eb9;
+        color: #498eb9;
+        text-align:center;
+    }
+    
+    /*탑승객*/
+    .persWrap{
+        height:80px; 
+        text-align:center;
+        position: absolute;
+        top:420px; left: 50px;
+        display: flex;
+    }
+    .persWrap *{display:inline-block; }
+    .persWrap h4{
+        font-size: 18px;
+        font-weight: bold;
+        padding-right: 0px;
+    }
+    .persWrap>div{ margin: 0 50px;}
+   
+    p.minus, p.plus{
+        font-size:25px;
+        
+        cursor:pointer;
+        color: #498eb9;
+    }
+    p.minus:hover, p.plus:hover{font-weight: bold;}
+    #adult_cnt{width:50px; font-size: 18px;}
+    #child_cnt{width:50px; font-size: 18px;}
+    #baby_cnt{width:50px; font-size: 18px;}
+    
+    /*조회*/
+    #bokig>input:last-child{
+        position: absolute;
+        top:650px;
+        width:200px;
+        height: 50px;
+        font-size: 22px;
+        background: #498eb9;
+        border: 2px solid#498eb9;
+        color: #fff;
+        cursor: pointer;
+    }
+    #bokig>input:last-child:hover{
+        background: #fff;
+        color: #498eb9;
+    }
+
+    /*편도*/
+    #r03_ntrn #bokig>p{
+        width:80%; height: 50px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #r03_ntrn .bor_dt{
+        width:100%; height: 50px;
+    }
+    
+}
+
+/*pc*/
+@media all and (min-width:960px) {
+
+    /*subr01.html*/
+    .subr01{margin-top: 50px;}
+    .contents{
+        width:1000px;
+        height:800px;
+        margin:100px auto 100px;
+        background: #498eb9;
+    }
+    ul.tab_menu{width:100%;}
+    
+    ul.tab_menu>li{
+        float:left;
+        width:50%;
+        background:#498eb9;
+        text-align:center;
+        height:50px;
+        line-height:50px;
+        box-sizing: border-box;
+        cursor: pointer;
+        color:#fff;
+        font-size: 20px;
+    }
+    ul.tab_menu::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    
+    ul.tab_menu>li.active{
+        background: white;
+        border-top:2px solid #498eb9;
+        color:#498eb9;
+        font-weight: bold;
+    }
+    ul.tab_menu>li:first-child.active{
+        border-left:2px solid #498eb9;
+    }
+    ul.tab_menu>li:last-child.active{
+        border-right:2px solid #498eb9;
+    }
+    .tab_contents{
+        position: relative;
+    }
+    .tab_contents>div{
+        position:absolute;
+        background:#fff;
+        border-bottom:2px solid #498eb9;
+        border-left:2px solid #498eb9;
+        border-right:2px solid #498eb9;
+        box-sizing: border-box;
+        padding:20px;
+        color:#4d4d4d;
+        height:750px; width:100%;
+        line-height: 2;
+    }
+
+    .tab_contents>div.active{z-index:9999;}
+    
+
+    #bokig{
+        display:flex; 
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    #bokig>img:nth-of-type(1){
+        width:80px; 
+        position: absolute;
+        margin-top: 6px;
+    }
+    /*드롭다운 출발지*/
+    #bok_dep{
+        width:300px;
+        
+        
+    }
+	#bok_dep>li{
+        background:#498eb9; 
+        cursor:pointer;
+        padding:5px; 
+        border:#498eb9 1px solid; 
+        position:relative;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+	#bok_dep>li.choice ~ li{display:none; z-index: 99;}
+	#bok_dep>li.choice::after{
+		content:'▼';
+		color:#fff;
+		position:absolute;
+		right:10px;
+		transition: all .2s;
+	}
+    #bok_dep:hover>li.choice::after{color:#77a092;}
+	#bok_dep>li:not(.choice):hover{background: #fff; color:#77a092}
+
+    /*드롭다운 도착지*/
+    #bok_des{
+        width:300px;
+        
+    }
+	#bok_des>li{
+        background:#498eb9; 
+        cursor:pointer;
+        padding:5px; 
+        border:#498eb9 1px solid; 
+        position:relative;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+    #bok_des>li:not(.choice):hover{background: #fff; color:#77a092}
+	#bok_des>li.choice ~ li{display:none; z-index: 99;}
+	#bok_des>li.choice::after{
+		content:'▼';
+		color:#fff;
+		position:absolute;
+		right:10px;
+		transition: all .2s;
+	}
+    #bok_des:hover>li.choice::after{color:#77a092;}
+	
+    /*가는날 오는날*/
+    #bokig>p{
+        width:300px; height: 50px;
+        position: absolute;
+        top:240px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        left: 150px;
+        
+    }
+    #bokig>p:nth-of-type(2){
+        left: 550px;
+        text-align: center;
+    }
+    .bor_dt{
+        width:270px; height: 50px;
+        font-size: 22px; 
+        background:#fff;
+        border:2px solid #498eb9;
+        color: #498eb9;
+        text-align:center;
+    }
+    
+    /*탑승객*/
+    .persWrap{
+        height:80px; 
+        text-align:center;
+        position: absolute;
+        top:420px; left: 50px; 
+    }
+    .persWrap *{display:inline-block; }
+    .persWrap h4{
+        font-size: 25px;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+    .persWrap>div{ margin: 0 50px;}
+   
+    p.minus, p.plus{
+        font-size:25px;
+        padding:0px 10px;
+        cursor:pointer;
+        color: #498eb9;
+    }
+    p.minus:hover, p.plus:hover{font-weight: bold;}
+    #adult_cnt{width:50px; font-size: 28px;}
+    #child_cnt{width:50px; font-size: 28px;}
+    #baby_cnt{width:50px; font-size: 28px;}
+    
+    /*조회*/
+    #bokig>input:last-child{
+        position: absolute;
+        top:650px;
+        width:200px;
+        height: 50px;
+        font-size: 22px;
+        background: #498eb9;
+        border: 2px solid#498eb9;
+        color: #fff;
+        cursor: pointer;
+    }
+    #bokig>input:last-child:hover{
+        background: #fff;
+        color: #498eb9;
+    }
+
+    /*편도*/
+    #r03_ntrn #bokig>p{
+        width:90%; height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #r03_ntrn .bor_dt{
+        width:270px; height: 50px;
+    }
+    
+
+}

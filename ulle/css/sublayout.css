@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./layout.css";
+
+body{font-family: 'NanumBarunGothic';}
+
+#subpg_nav{
+    width:100%; height: 50px;
+    border:2px solid #77a092;
+} 
+
+.sub_pg{
+    width:100%; height: 150px;
+    margin: 0 auto ;
+
+}
+.sub_pg>h5{ 
+    font-size: 40px;
+    text-align: center;
+    color:#fff;
+    line-height: 150px;
+    background: rgba(0,0,0,0.3);
+}
+/*제목영역배경  dokdo04 ull04*/
+.sub_pg{background: url('../images/ull04.jpg')no-repeat center 35%/cover ;}
+
+
+
+@media all and (max-width:960px) {
+    #subpg_nav{
+        width:100%; height: 50px;
+        border:1px solid #77a092;
+        margin-top: 80px;
+    } 
+
+    .sub_pg>h5{ 
+        font-size: 35px;
+    }
+
+    #subpg_nav{
+    width:100%; height: 50px;
+    border:2px solid #77a092;
+} 
+
+.sub_pg{
+    width:100%; height: 150px;
+    margin: 0 auto ;
+
+}
+.sub_pg>h5{ 
+    font-size: 40px;
+    text-align: center;
+    color:#fff;
+    line-height: 150px;
+    background: rgba(0,0,0,0.3);
+}
+
+}

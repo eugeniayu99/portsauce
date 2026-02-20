@@ -1,0 +1,107 @@
+h2{display: none;}
+
+body{
+    width:1280px;
+    margin: 0 auto;
+
+}
+header{
+    width:100%;
+    height: auto;
+}
+section{
+    width:100%;
+    height: auto;
+}
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px;
+}
+h4{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+}
+#eu-game-result-box button{
+    display: block;
+    margin: auto;
+}
+/**/
+.com-wrap{
+    width:500px; height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+#com-first{
+    width:500px;
+     
+}
+#com-first-img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*결과*/
+.com-result{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.com-result>img{
+    width:150px;
+
+}
+div.vs{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*가위바위보*/
+
+.user-wrap{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;   
+}
+button.content-srp{
+    width:250px; height: 250px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 20px 20px 20px rgb(138, 138, 138);
+    border-radius: 100%;
+    position: relative;
+    cursor:pointer;
+    border: none;
+    animation-fill-mode: forwards;
+}
+.content-img{
+    width: 150px;
+    position: absolute;
+}
+.content-img01{
+    top:80px; left: 60px;
+}
+.content-img02{
+    top:60px; left: 50px;
+}
+.content-img03{
+    top:60px; left: 55px;
+}
+.content-srp:hover{
+    background-color: rgb(193, 248, 255);
+    
+}
+

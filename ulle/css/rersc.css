@@ -1,0 +1,288 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+/*mobile*/
+@media all and (max-width:960px) {
+	
+   /*.sub01c*/
+   .sub01c{width:90%; height: auto;
+      margin: 50px auto 200px;}
+   .sub01c>div:nth-of-type(1){
+   border:2px solid #77a092;
+   border-radius: 5px;
+   margin: 0px auto 50px;
+   }
+   .sub01c>div:nth-of-type(1)>h6{
+   font-size: 24px;
+   font-weight: bold;
+   padding:20px;
+   color: #333;
+   border-bottom: 2px dotted #77a092;
+   }
+   .pers1{
+      width:100%; margin: 20px 10px 0px;
+      display: flex; 
+      justify-content: space-around;
+   }
+   .pers1>form>p{
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+   }
+   .pers1>form>p:nth-of-type(2)>span{
+   font-size: 17px;
+   font-weight: normal;
+   }
+   .pers1>form>p>input{
+      margin-bottom: 40px;
+      border: 2px solid #77a092;
+   }
+   .pers1>form>p:nth-of-type(1)>input:nth-of-type(1){
+      width:20%; height: 30px;
+      margin-left: 50px;
+      padding-left: 20px;
+   }
+   .pers1>form>p:nth-of-type(1)>input:nth-of-type(2){
+      width:40%; height: 30px;
+      margin-left: 5px;
+   }
+   .pers1>form>p:nth-of-type(2)>input{
+   margin-left: 50px;
+   }
+   .pers1>form>p:nth-of-type(3)>input{
+      width:63.5%; height: 30px;
+      margin-left: 15px;
+      padding-left: 20px;
+   }
+   .pers1>form>p:nth-of-type(4)>select{
+      width:69.3%; height: 35px;
+      margin-left: 50px;
+      border: 2px solid #77a092;
+      text-align: center;
+   }
+   .pers1>form>input{
+      position: relative;
+      top:100px;
+      left:50%; transform: translateX(-50%);
+      background: #498eb9;
+      border: 2px solid #498eb9;
+      color: #fff;
+      font-size: 20px;
+      padding:10px  50px;
+      cursor: pointer;
+   }
+   .pers1>form>input:hover{
+      background: #fff;
+      color: #498eb9;
+      font-weight: bold;
+   }
+
+
+
+   /*.sub01c_nlog*/
+   .sub01c_nlog{width:90%; height: auto;
+      margin: 50px auto 50px;}
+   .sub01c_nlog>div:nth-of-type(1){
+   border:2px solid #77a092;
+   border-radius: 5px;
+   margin: 0px auto 50px;
+   }
+   .sub01c_nlog>div:nth-of-type(1)>h6{
+   font-size: 24px;
+   font-weight: bold;
+   padding:20px;
+   color: #333;
+   border-bottom: 2px dotted #77a092;
+   }
+   .pers2{
+   width:100%; margin: 20px 10px 0px;
+   display: flex; 
+   justify-content: space-around;
+   }
+   .pers2>form>p{
+   font-size: 20px;
+   font-weight: bold;
+   color: #333;
+   }
+   .pers2>form>p>input{
+      margin-bottom: 40px;
+      border: 2px solid #77a092;
+   }
+   .pers2>form>p:nth-of-type(1)>input:nth-of-type(1){
+   width:20%; height: 30px;
+   margin-left: 50px;
+   padding-left: 20px;
+   }
+   .pers2>form>p:nth-of-type(1)>input:nth-of-type(2){
+      width:40%; height: 30px;
+      margin-left: 5px;
+      padding-left: 20px;
+   }
+   .pers2>form>p:nth-of-type(2)>select{
+      border: 2px solid #77a092;
+      height: 36px; width:15%;
+      margin-left: 15px;
+      text-align: center;
+   }
+   .pers2>form>p:nth-of-type(2)>input{
+      width:15%; height: 30px;
+      text-align: center;
+   }
+   .pers2>form>p:nth-of-type(3)>input{
+      width:65%; height: 30px;
+      margin-left: 15px;
+      padding-left: 20px;
+      
+   }
+   .pers2>form>p:nth-of-type(4)>input{
+      width:65%; height: 30px;
+      margin-left: 33px;
+      padding-left: 20px;
+   }
+   
+
+}
+
+/*pc*/
+@media all and (min-width:960px) {
+    
+    /*.sub01c*/
+    .sub01c{width:1080px; height: auto;
+        margin: 50px auto 250px;}
+    .sub01c>div:nth-of-type(1){
+       border:2px solid #77a092;
+       border-radius: 5px;
+       margin: 0px auto 50px;
+    }
+    .sub01c>div:nth-of-type(1)>h6{
+       font-size: 30px;
+       font-weight: bold;
+       padding:20px 100px;
+       color: #333;
+       border-bottom: 2px dotted #77a092;
+    }
+    .pers1{
+        width:700px; margin: 70px 0px 40px 185px;
+        display: flex; 
+        justify-content: space-around;
+     }
+     .pers1>form>p{
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+     }
+     .pers1>form>p:nth-of-type(2)>span{
+     font-size: 17px;
+     font-weight: normal;
+     }
+     .pers1>form>p>input{
+         margin-bottom: 40px;
+         border: 2px solid #77a092;
+     }
+     .pers1>form>p:nth-of-type(1)>input:nth-of-type(1){
+        width:100px; height: 30px;
+        margin-left: 50px;
+        padding-left: 20px;
+     }
+     .pers1>form>p:nth-of-type(1)>input:nth-of-type(2){
+         width:200px; height: 30px;
+         margin-left: 5px;
+      }
+     .pers1>form>p:nth-of-type(2)>input{
+     margin-left: 50px;
+     }
+     .pers1>form>p:nth-of-type(3)>input{
+         width:335px; height: 30px;
+         margin-left: 15px;
+         padding-left: 20px;
+     }
+     .pers1>form>p:nth-of-type(4)>select{
+         width:362px; height: 35px;
+         margin-left: 50px;
+         border: 2px solid #77a092;
+         text-align: center;
+      }
+      .pers1>form>input{
+         position: relative;
+         top:180px;
+         left:50%; transform: translateX(-50%);
+         background: #498eb9;
+         border: 2px solid #498eb9;
+         color: #fff;
+         font-size: 20px;
+         padding:10px  50px;
+         cursor: pointer;
+      }
+      .pers1>form>input:hover{
+         background: #fff;
+         color: #498eb9;
+         font-weight: bold;
+      }
+ 
+
+
+     /*.sub01c_nlog*/
+    .sub01c_nlog{width:1080px; height: auto;
+        margin: 50px auto 50px;}
+    .sub01c_nlog>div:nth-of-type(1){
+       border:2px solid #77a092;
+       border-radius: 5px;
+       margin: 0px auto 50px;
+    }
+    .sub01c_nlog>div:nth-of-type(1)>h6{
+       font-size: 30px;
+       font-weight: bold;
+       padding:20px 100px;
+       color: #333;
+       border-bottom: 2px dotted #77a092;
+    }
+    .pers2{
+       width:700px; margin: 70px 0px 40px 185px;
+       display: flex; 
+       justify-content: space-around;
+    }
+    .pers2>form>p{
+       font-size: 20px;
+       font-weight: bold;
+       color: #333;
+    }
+    .pers2>form>p>input{
+        margin-bottom: 40px;
+        border: 2px solid #77a092;
+    }
+    .pers2>form>p:nth-of-type(1)>input:nth-of-type(1){
+       width:100px; height: 30px;
+       margin-left: 50px;
+       padding-left: 20px;
+    }
+    .pers2>form>p:nth-of-type(1)>input:nth-of-type(2){
+        width:200px; height: 30px;
+        margin-left: 5px;
+        padding-left: 20px;
+     }
+     .pers2>form>p:nth-of-type(2)>select{
+        border: 2px solid #77a092;
+        height: 36px; width:70px;
+        margin-left: 15px;
+        text-align: center;
+     }
+     .pers2>form>p:nth-of-type(2)>input{
+        width:70px; height: 30px;
+        text-align: center;
+    }
+    .pers2>form>p:nth-of-type(3)>input{
+        width:335px; height: 30px;
+        margin-left: 15px;
+        padding-left: 20px;
+        
+    }
+    .pers2>form>p:nth-of-type(4)>input{
+        width:335px; height: 30px;
+        margin-left: 33px;
+        padding-left: 20px;
+     }
+     
+
+
+}

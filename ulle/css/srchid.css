@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "layout.css";
+
+/*공통*/
+#srchIdpw{height:auto; margin: 100px auto;}
+#srchid{
+    width:1000px;
+    border-bottom: 0px;
+    margin: 0 auto ;
+    padding-bottom: 100px;
+}
+
+#srchid>h5{
+    border-bottom: 2px solid #77a092;
+    padding-bottom: 100px;
+    font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color:#4d4d4d;
+        padding: 100px 0 80px;
+}
+
+#srchid>p{
+    margin: 50px auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+#srchid>div:nth-of-type(1){
+    width:500px; height: 150px; 
+    background: #fff;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 150px;
+    border:2px solid #77a092;
+}
+#srchid>div:nth-of-type(2){
+    width:500px; margin: 70px auto;
+    display: flex; 
+    justify-content: space-around;
+
+}
+#srchid>div:nth-of-type(2)>a{
+    display: block;
+    width:200px; height: 50px;
+    background: #77a092;
+    border: 2px solid #77a092;
+    text-align: center;
+    color:#fff;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+#srchid>div:nth-of-type(2)>a:hover{
+    background: #fff;
+    color:#77a092;
+    font-weight: bold;
+}
+
+/*mb*/
+@media all and (max-width:960px) {
+    #srchIdpw{width:100%;height:auto; margin: 100px auto;}
+    #srchid{
+    width:100%;
+    border-bottom: 0px;
+    margin: 0 auto ;
+    padding: 100px 0;
+}
+
+}
+
+/*pc*/
+@media all and (min-width:960px) {}

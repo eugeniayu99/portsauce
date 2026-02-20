@@ -1,0 +1,471 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+/*subr01a.html*/
+.subr01a_go{width:1080px; height: auto;
+    margin: 50px auto;}
+.subr01a_go>div:nth-of-type(1){
+   border:2px solid #77a092;
+   border-radius: 5px;
+   margin: 0px auto 50px;
+}
+.subr01a_go>div:nth-of-type(1)>h6{
+   font-size: 30px;
+   font-weight: bold;
+   padding:20px 100px;
+   color: #333;
+   border-bottom: 2px dotted #77a092;
+}
+.area{
+   width:700px; margin: 70px auto 50px;
+   display: flex; 
+   justify-content: space-around;
+}
+.area>p{
+   font-size: 25px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 35px;
+   color: #333;
+}
+
+.area>p:nth-of-type(2){
+   font-size: 50px;
+   line-height: 70px;
+   color: #77a092;
+}
+.slideWrap{position:relative;}
+.slideWrap li{
+   width:180px; height:120px;
+   box-sizing:border-box;
+   border:2px solid #77a092;
+   background: #77a092;
+   border-radius: 5px;
+   float:left;
+   position:absolute;
+   cursor: pointer;
+}
+.slideWrap li:hover{
+   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.slideWrap li>p{ 
+   color: #fff;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 15px;
+}
+.slideWrap li>p:first-child{
+   margin-top: 30px;
+}
+.slideWrap::after{
+   content:'';
+   display:block;
+   clear:both;
+   width:0; height:0;
+   visibility:hidden;
+}
+.slideWrap li:nth-child(1){left:50px;}
+.slideWrap li:nth-child(2){left:290px;}
+.slideWrap li:nth-child(3){left:520px;}
+.slideWrap li:nth-child(4){left:750px;}
+.slideWrap li:nth-child(5){left:980px;}
+.slideWrap li:nth-child(6){left:1210px;}
+.slideWrap li:nth-child(7){left:1440px;}
+
+.dt_prc{
+   width:980px;/*보여지는개수*/ overflow:hidden;
+   height:130px;
+   margin: 0 auto;
+   position:relative;
+}
+.btn_wrap{
+   position:absolute;
+   width:100%;
+   top:50%; transform:translateY(-60%);
+}
+.btn_wrap::after{
+   content:'';
+   display:block;
+   clear:both;
+   width:0; height:0;
+   visibility:hidden;
+}
+.btn_wrap>button:last-child{
+   float:right;
+}
+.btn_wrap>button:last-child{
+   float:right;
+}
+.btn_wrap>button{
+   border:none;
+   background: none;
+   font-size: 25px;
+   cursor: pointer;
+}
+/*편명출발도착시간 날짜별*/
+.dthere_prc{
+   padding-bottom: 50px;
+   border-bottom: 3px dotted #77a092;
+}
+#wed,#thur,#fri,#sat,#sun,#mon,#tue{
+   display: none;
+}
+
+
+
+
+/*오는여정*/
+.subr01a_bak{width:1080px; height: auto;
+   margin: 50px auto;}
+.subr01a_bak>div:nth-of-type(1){
+  border:2px solid #77a092;
+  border-radius: 5px;
+  margin: 0px auto 50px;
+}
+.subr01a_bak>div:nth-of-type(1)>h6{
+  font-size: 30px;
+  font-weight: bold;
+  padding:20px 100px;
+  color: #333;
+  border-bottom: 2px dotted #77a092;
+}
+.bslideWrap{position:relative;}
+.bslideWrap li{
+  width:180px; height:120px;
+  box-sizing:border-box;
+  border:2px solid #77a092;
+  background: #77a092;
+  border-radius: 5px;
+  float:left;
+  position:absolute;
+  cursor: pointer;
+}
+.bslideWrap li:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.bslideWrap li>p{ 
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+.bslideWrap li>p:first-child{
+  margin-top: 30px;
+}
+.bslideWrap::after{
+  content:'';
+  display:block;
+  clear:both;
+  width:0; height:0;
+  visibility:hidden;
+}
+.bslideWrap li:nth-child(1){left:50px;}
+.bslideWrap li:nth-child(2){left:290px;}
+.bslideWrap li:nth-child(3){left:520px;}
+.bslideWrap li:nth-child(4){left:750px;}
+.bslideWrap li:nth-child(5){left:980px;}
+.bslideWrap li:nth-child(6){left:1210px;}
+.bslideWrap li:nth-child(7){left:1440px;}
+
+.bdt_prc{
+  width:980px;/*보여지는개수*/ overflow:hidden;
+  height:130px;
+  margin: 0 auto;
+  position:relative;
+}
+.bbtn_wrap{
+  position:absolute;
+  width:100%;
+  top:50%; transform:translateY(-60%);
+}
+.bbtn_wrap::after{
+  content:'';
+  display:block;
+  clear:both;
+  width:0; height:0;
+  visibility:hidden;
+}
+.bbtn_wrap>button:last-child{
+  float:right;
+}
+.bbtn_wrap>button{
+  border:none;
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+/*편명출발도착시간 날짜별*/
+.bdthere_prc{
+  padding-bottom: 50px;
+  border-bottom: 3px dotted #77a092;
+}
+
+#bwed,#bthur,#bfri,#bsat,#bsun,#bmon,#btue{
+  display: none;
+}
+
+/*테이블*/
+table{ 
+  width:1078px; 
+  text-align:center;
+  color:#333;
+  font-size: 20px;
+  font-family:'NanumBarunGothic';
+  cursor: pointer;
+  border: 2px solid #77a092;
+  margin-top: 50px;
+}
+th{ 
+  font-weight: bold;
+  height: 70px;
+  line-height: 70px;
+  border-bottom:2px solid #77a092;
+}
+td{
+  height: 100px;
+  line-height: 100px;
+  border-bottom:2px solid #77a092;
+}
+tr>td:nth-of-type(5):hover,tr>td:nth-of-type(6):hover,tr>td:nth-of-type(7):hover{
+  font-weight: bold;
+}
+tr:last-child>td{ border-bottom:none;}
+
+/*유의사항*/
+.subr01a_not{
+   width:1080px; 
+   height: auto;
+   margin:50px auto;
+}
+.subr01a_not>h5{
+   font-weight: bold;
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+.subr01a_not>p{
+  line-height: 30px;
+}
+/*예상항공운임료*/
+.subr01a_prc{
+width:1080px; 
+height: auto;
+margin:70px auto;
+}
+.subr01a_prc>h5{
+   font-weight: bold;
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+.prc_box{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 50px;
+   border-bottom: 2px solid #77a092;
+   border-right: 2px solid #77a092;
+   border-left: 2px solid #77a092;
+}
+.prc_box>h6{
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+}
+.subr01a_prc_box01>h6{
+   color: #000;
+   font-size: 20px;
+   line-height: 28px;
+}
+.subr01a_prc_box01{
+   background: #77a092;
+   border-top: 2px solid #77a092; 
+}    
+.prc_box>div>p{
+   font-size: 19px;
+   font-weight: bold;
+   color: #333;
+}
+.subr01a_prc_box01>div{
+   background: #fff;
+   padding: 5px 10px;
+}
+
+.subr01a_prc_box01>div>p{
+   font-size: 19px;
+   font-weight: bold;
+   color: #000;
+}
+.subr01a_prc_box01>div>p:nth-of-type(2){
+   padding-left: 50px;
+}
+.prc_box>div{
+   display: flex;
+   justify-content: center;
+}
+.subr01a_prc>a{
+   display: block;
+   background: #498eb9;
+   color:#fff;
+   border: 2px solid #498eb9;
+   font-size: 22px;
+   margin: 100px auto;
+   width:150px; height: 45px;
+   line-height: 45px;
+   text-align: center;
+}
+.subr01a_prc>a:hover{
+   background: #fff;
+   color:#498eb9;
+   font-weight: bold;
+}
+
+
+/*mobile*/
+@media all and (max-width:960px) {
+	/*subr01a.html*/
+    .subr01a_go{ width:90%;}
+   
+    .subr01a_go>div:nth-of-type(1)>h6{
+        padding:20px;
+        font-size: 24px;
+    }
+    .area{width:100%;}
+    
+    .slideWrap{position:relative;}
+    .slideWrap li{
+        width:100px; height:100px;
+        box-sizing:border-box;
+    }
+    .slideWrap li>p{ 
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .slideWrap li:nth-child(1){left:30px;}
+    .slideWrap li:nth-child(2){left:160px;}
+    .slideWrap li:nth-child(3){left:290px;}
+    .slideWrap li:nth-child(4){left:420px;}
+    .slideWrap li:nth-child(5){left:520px;}
+    .slideWrap li:nth-child(6){left:500px;}
+    .slideWrap li:nth-child(7){left:600px;}
+
+    .dt_prc{
+        width:420px;/*보여지는개수*/ overflow:hidden;
+        height:130px;
+        margin: 0 auto;
+        position:relative;
+    }
+    .btn_wrap{
+        position:absolute;
+        width:100%px;
+        top:50%; transform:translateY(-90%);
+        z-index: 99999;
+    }
+    /*편명출발도착시간 날짜별*/
+    .dthere_prc{
+        padding-bottom: 50px;
+        border-bottom: 3px dotted #77a092;
+    }
+    #wed,#thur,#fri,#sat,#sun,#mon,#tue{
+        display: none;
+    }
+
+    /*오는여정*/
+    .subr01a_bak{width:90%; height: auto;
+        margin: 50px auto;}
+    
+    .subr01a_bak>div:nth-of-type(1)>h6{
+        font-size: 24px;
+        font-weight: bold;
+        padding:20px;
+        color: #333;
+        border-bottom: 2px dotted #77a092;
+    }
+    .bslideWrap{position:relative;}
+    .bslideWrap li{width:100px; height:100px;}
+    
+    .bslideWrap li>p{font-size: 15px;}
+    
+    .bslideWrap li:nth-child(1){left:30px;}
+    .bslideWrap li:nth-child(2){left:160px;}
+    .bslideWrap li:nth-child(3){left:290px;}
+    .bslideWrap li:nth-child(4){left:420px;}
+    .bslideWrap li:nth-child(5){left:520px;}
+    .bslideWrap li:nth-child(6){left:500px;}
+    .bslideWrap li:nth-child(7){left:600px;}
+    .bdt_prc{
+        width:420px;/*보여지는개수*/ overflow:hidden;
+        height:130px;
+        margin: 0 auto;
+        position:relative;
+    }
+    .bbtn_wrap{
+        position:absolute;
+        width:100%px;
+        top:50%; transform:translateY(-90%);
+        z-index: 99999;
+    }
+    
+    /*편명출발도착시간 날짜별*/
+    .bdthere_prc{
+        padding-bottom: 50px;
+        border-bottom: 3px dotted #77a092;
+    }
+    
+    #bwed,#bthur,#bfri,#bsat,#bsun,#bmon,#btue{
+        display: none;
+    }
+
+    /*테이블*/
+    table{ width:100%;  font-size: 15px;}
+
+    /*유의사항*/
+    .subr01a_not{width:90%;}
+    .subr01a_not>h5{
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    /*예상항공운임료*/
+    .subr01a_prc{
+    width:95%; 
+    height: auto;
+    margin:70px auto;
+    }
+    .subr01a_prc>h5{
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .prc_box{padding: 10px; }
+    .subr01a_prc_box01>h6{font-size: 17px;}
+    .prc_box>div>p{font-size: 17px;}
+    .subr01a_prc_box01>div{
+        background: #fff;
+        padding: 5px 10px;
+    }
+    .subr01a_prc_box01>div>p{font-size: 16px;}
+    .subr01a_prc_box01>div>p:nth-of-type(2){
+        padding-left: 20px;
+    }
+    
+    .subr01a_prc>a{
+        display: block;
+        background: #498eb9;
+        color:#fff;
+        border: 2px solid #498eb9;
+        font-size: 22px;
+        margin: 100px auto;
+        width:150px; height: 45px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .subr01a_prc>a:hover{
+        background: #fff;
+        color:#498eb9;
+        font-weight: bold;
+    }
+}
+

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EastSeaUlleungAir</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="./css/enstyle.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $.datepicker.setDefaults($.datepicker.regional['ko']);
+            $( ".pop_calA, .pop_calB" ).datepicker({
+                firstDay:0,
+            });
+        });
+    </script>
+  
+</head>
+<body>
+<div id="container">
+    <div id="gray"></div> 
+    <div class=top><a href="#container">▲</a></div>
+    <header class="wrap header">
+        <nav>
+            <div class="utilWrap">
+            <ul class="site">
+                <li><a href="./comlog.html">Business</a></li>
+                <li><a href="./comlog.html">Travel Agency</a></li>
+                <li><a href="#">UlleungStore</a></li>
+            </ul>
+            <ul class="util">
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./join01.html">JOIN US</a></li>
+                <li><a href="./customer.html">Customer Service</a></li>
+                <li><a href="index.html"><img src="./images/kr.png" alt="kr"/></a></li>
+                <li><a href="./indexen.html"><img src="./images/en.png" alt="en"/></a></li>
+            </ul>
+            </div>
+            <div class="notice">
+                <a href="#">Changes to Korean Domestic Flights Check-In Counter Closing Time(Effective January 1st, 2022)  <ins>View details</ins></a>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="gnbWrap">
+                <div id="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 id="logo"><a href="./index.html"><img src="./images/logo3.png" alt="LOGO"/></a></h1>
+                <a href="./login.html"><img src="./images/customer.png" alt="icon"/></a>
+                <ul id="gnb" >
+                    <li><a href="#">BOOK</a>
+                        <ul class="sub sub1">
+                            <li><a href="#">Book a Trip</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#"> Instant Search</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Find My Trip</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">Reservation change/cancel</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Check-in</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">Web check-in</a></li>
+                                    <li><a href="#">Check-in at the airport </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li><a href="#">SERVICE</a>
+                        <ul class="sub sub2">
+                            <li><a href="#">Airport Service</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">Airport counter information</a></li>
+                                    <li><a href="#">Baggage</a></li>
+                                    <li><a href="#">Special Assistance</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">In-Flight Service</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">BENEFIT</a>
+                        <ul class="sub sub3">
+                            <li><a href="#">Travelsafetyservice</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">Don't worry</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Rental cars</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">UlleungUlleungrental</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Hotels</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">Hotels Combine</a></li>
+                                    <li><a href="#">Ulleungdo Island</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Travel Activities</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">EastSeaUlleungAir</a>
+                        <ul class="sub sub4">
+                            <li><a href="#">EastSeaUlleungAir</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">CI소개</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">언론보도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Aircraft introduction</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">ERJ-145</a></li>
+                                    <li><a href="#">항공기좌석배치도</a></li>
+                                </ul>
+                            </li>
+                       </ul>
+                    </li> 
+                    <li><a href="#">Ulleungdo/dokdo</a>
+                        <ul class="sub sub5">
+                            <li><a href="#">울릉도</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">울릉군홈페이지</a></li>
+                                    <li><a href="#">울릉도명소</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">독도</a>
+                                <ul class="sub_sub">
+                                    <li><a href="#">독도홈페이지</a></li>
+                                    <li><a href="#">독도입도안내</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">추천여행코스</a></li>
+                        </ul>
+                    </li>   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="bnr">
+<h2>비주얼배너영역</h2>
+    <div id="con1">
+        <div id="large_img">
+            <img src="./images/ull04.jpg"  alt="slide01" class="topImg"/>
+            <img src="./images/ull03.jpg" alt="slide02"/>
+            <img src="./images/ull08.jpg" alt="slide03"/>
+            <img src="./images/ull06.jpg" alt="slide04"/>
+        </div>
+        <div id="thumbs">
+            <a href="#" data-i="0"><img src="./images/btn_banner.png" alt="btn_banner"/></a>
+            <a href="#" data-i="1"><img src="./images/btn_banner.png" alt="btn_banner"/></a>
+            <a href="#" data-i="2"><img src="./images/btn_banner.png" alt="btn_banner"/></a>
+            <a href="#" data-i="3"><img src="./images/btn_banner.png" alt="btn_banner"/></a>
+        </div>
+    </div>
+    <div class="mb_icon">
+        <a href="#">
+            <img src="./images/icon01.png" alt="icon01"/>
+        </a>
+        <a href="#">
+            <img src="./images/icon02.png" alt="icon01"/>
+        </a>
+        <a href="#">
+            <img src="./images/icon03.png" alt="icon01"/>
+        </a> 
+    </div>
+    <div class="text01">
+        The beginning of Ulleung Airport<br/>
+        Be with EastSeaUlleungAirlines.
+    </div>
+    </section>
+    <section class="pop">
+<h2>팝업</h2>
+<div class="contents">  
+    <ul class="tab_menu">
+        <li class="active">Book a Trip</li>
+        <li>Find My Trip</li>
+        <li>Check-in</li>
+        <li>Hotel/Car Rentals</li>
+    </ul>
+    <div class="tab_contents">
+        <div id="no01" class="active">
+            <ul class="tab_submenu">
+                <li class="choice">Round-Trip</li>
+                <li>One-Way</li>
+            </ul>
+            
+            <div class="tab_subcon">
+                <div id="ver01" class="choice">
+                <form name="frm" action="#" method="get">
+                    <div class="box01 dep">
+                        <a href="#">
+                            <span>From</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 des">
+                        <a href="#">
+                            <span>To</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 calA">
+                        <a href="#">
+                            <span>Departing Date</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 calB">
+                        <a href="#">
+                            <span>Returning Date</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 pers">
+                        <a href="#">
+                            <span>passenger</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <input class="res" type="submit" value="Search"/>
+
+                </form>
+                </div>
+                <div id="ver02" >
+                <form>    
+                    <div class="box01 dep">
+                        <a href="#">
+                            <span>From</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 des" >
+                        <a href="#">
+                            <span>To</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 calA">
+                        <a href="#">
+                            <span>Departing Date</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <div class="box01 pers">
+                        <a href="#">
+                            <span>passenger</span>
+                            <img src="./images/pop_icon.png" alt="icon"/>
+                        </a>
+                    </div>
+                    <input class="res" type="submit" value="Search"/>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div id="no02" >
+            <p>You can check the flight ticket you reserved conveniently.</p>
+            <div class="box_contain">
+            <form>
+                <div class="box01 intxt">
+                    <input type="text" size="15" maxlength="8" placeholder="예약 번호"/>
+                </div>    
+                <div class="box01 dep">
+                    <a href="#">
+                        <span>From</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01 des">
+                    <a href="#">
+                        <span>To</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01 calA">
+                    <a href="#">
+                        <span>Departing Date</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01 intxt">
+                    <input type="text" size="15"  maxlength="10" placeholder="탑승객 성"/>
+                </div>
+                <input class="res" size="10" type="submit" value="Search"/>
+            </form>
+            </div>
+        <p>* Please enter 8 digits or English/number for your reservation number.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* ex) KIM 
+        </p>
+        </div>
+        <div id="no03" >
+            <p>Get a boarding pass for the seat you want in advance and reduce the waiting time at the airport.</p>
+            <div class="box_contain">
+            <form>
+                <div class="box01">
+                    <span>Reservation number</span>
+                    <input type="text" size="35" maxlength="8" placeholder="Enter 8 digits or 6 digits of English/number"/>
+                </div>    
+                <div class="box01 calA">
+                    <a href="#">
+                        <span>Departing Date</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <input class="res" type="submit" value="Search"/>
+            </form>
+            </div>
+        </div>
+        <div id="no04" >
+            <div>
+                <img src="./images/serv02.png" alt="imgno04"/>
+                <a href="#"><p>울릉울릉렌터카 바로가기</p></a>
+            </div>
+            <div>
+                <img src="./images/serv04.png" alt="imgno04"/>
+                <a href="#"><p>호텔스컴바인 바로가기</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <div class="pop_dep">
+        <span></span>
+        <span></span>
+        <h6>대한민국</h6>
+        <div></div>
+        <p>서울/김포(GMP)</p>
+        <p>울릉(ULL)</p>
+        <p>제주(CJU)</p>
+        <p>청주(CJJ)</p>
+        <p>광주(KWJ)</p>
+    </div>
+    <div class="pop_des">
+        <span></span>
+        <span></span>
+        <h6>대한민국</h6>
+        <div></div>
+        <p>서울/김포(GMP)</p>
+        <p>울릉(ULL)</p>
+        <p>제주(CJU)</p>
+        <p>청주(CJJ)</p>
+        <p>광주(KWJ)</p>
+    </div>
+    <div class="pop_calA"></div>
+    <div class="pop_calB"></div>
+    <div class="pop_pers">
+        <span></span>
+        <span></span>
+        <h5>탑승객 선택</h5>
+        <div></div>
+        <div class="persnum">
+            <div class="plmin01 plmin">
+                <h6>성인</h6>
+                <p class="minus01 minus">-</p>
+                <p class="cnt01 cnt">0</p>
+                <p class="plus01 plus">+</p>
+            </div>
+            <p>12세~</p>
+            <div class="plmin02 plmin">
+                <h6>소아</h6>
+                <p class="minus02 minus">-</p>
+                <p class="cnt02 cnt">0</p>
+                <p class="plus02 plus">+</p>
+            </div>
+            <p>만 2세~12세</p>
+            <div class="plmin03 plmin">
+                <h6>유아</h6>
+                <p class="minus03 minus">-</p>
+                <p class="cnt03 cnt">0</p>
+                <p class="plus03 plus">+</p>
+            </div>
+            <p>생후 14일~만 2세<br/>(만24개월미만/최종탑승일기준)</p>
+            <button> 확인 </button>
+        </div>
+        <div class="agecal">
+            <h6>나이계산기</h6>
+            <form name="age" action="#" method="get">
+                <input type="text" size="40" maxlength="10" value="생년월일 8자리 (예시:20181004)"/>
+                <input type="submit" size="15" value="계산하기"/>
+            </form>
+            <p>
+                * 유/소아는 탑승 수속 시 생년월일을 확인할 수 있는 (건강보험증, 주민등록등본, 여권 택 1) 서류를 지참해 주시기 바랍니다.<br/>
+                * 성인 1명당 유아 1명만 동반 가능합니다.<br/>
+                * 탑승일(YYYY.MM.DD) 기준으로 입력한 생년월일 입니다.
+            </p>
+
+        </div>
+    </div>
+
+
+    <section id="mb_ver">
+    <h3>항공편 예약</h3>
+        <ul class="mb_submenu">
+            <li class="choose">왕복</li>
+            <li>편도</li> 
+        </ul>
+        <div class="mb_subcon">
+            <div id="ver03" class="choose">
+                <div class="box01">
+                    <a href="#">
+                        <span>출발지</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>도착지</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>가는날</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>오는날</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>탑승객</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="res"><a href="#">조회</a></div>
+            </div>
+            <div id="ver04">
+                <div class="box01">
+                    <a href="#">
+                        <span>출발지</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>도착지</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>가는날</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="box01">
+                    <a href="#">
+                        <span>탑승객</span>
+                        <img src="./images/pop_icon.png" alt="icon"/>
+                    </a>
+                </div>
+                <div class="res"><a href="#">조회</a></div>
+            </div>
+        </div>
+
+    </section>       
+    <section class="sec01">
+    <h2>bestpick</h2>
+    <h3>BEST PICK</h3>
+    <div class="slideWrap">
+        <div class="slideShow">
+            <ul class="bplist">
+                <li><img src="./images/jeju01.jpg" alt="img01"/></li>
+                <li><p>청주-제주</p></li>
+                <li>KRW 22,000~</li>
+            </ul>
+            <ul class="bplist">
+                <li><img src="./images/gju01.png" alt="img01"/></li>
+                <li>서울김포-광주</li>
+                <li>KRW 29,980~</li>
+            </ul>
+            <ul class="bplist">
+                <li><img src="./images/ull01.jpg" alt="img01"/></li>
+                <li>서울김포-울릉</li>
+                <li>KRW 31,080~</li>
+            </ul>
+            <ul class="bplist">
+                <li><img src="./images/jeju03.jpg" alt="img01"/></li>
+                <li>서울김포-제주</li>
+                <li> KRW 19,920~</li>
+            </ul>
+            <ul class="bplist">
+                <li><img src="./images/ull02.jpg" alt="img01"/></li>
+                <li>광주-울릉</li>
+                <li> KRW 39,280~</li>
+            </ul>
+        </div>     
+        <div class="btn_warp">
+            <span onclick="prevSlide()" class="prev"></span>
+            <span onclick="nextSlide()" class="next"></span>
+        </div>       
+    </div>
+    </section>
+    <section id="imgBanner">
+<h2>중간배너영역</h2> 
+    <div>
+        <h4>The beginning of the service<br/> on Ulleungdo Island in 2025,<br/>
+            EastSea Ulleung Air will be with you.</h4>
+    </div>
+    </section>
+    <section class="sec02">
+<h2>서비스안내영역</h2>
+    <h5>EastSeaUlleungAir SERVICE
+        <br/>동해울릉항공의 제휴 서비스</h5>
+    <div class="box_wrap">
+        <div class="box"><a href="#">
+            <h6>Travel safety service</h6>
+            <img src="./images/serv01.png" alt="imgsev"/>
+            <p>Please keep my trip safe!<br/>-Don't worry-</p>
+        </a></div>
+        <div class="box"><a href="#">
+            <h6>Rental cars</h6>
+            <img src="./images/serv02.png" alt="imgsev"/>
+            <p>Customized for Ulleung Island!<br/>-UlleungUlleungrental-</p>
+        </a></div>
+        <div class="box"><a href="#">
+            <h6>Hotels</h6>
+            <img src="./images/serv04.png" alt="imgsev"/>
+            <p>Compare them all at once!<br/>-Hotels Combine-</p>
+        </a></div>
+        <div class="box"><a href="#">
+            <h6>Travel Activities</h6>
+            <img src="./images/serv03.png" alt="imgsev"/>
+            <p>Discounts on tourist attractions and restaurants in Ulleung-gun.</p>
+        </a></div>
+
+    </div>
+    </section>
+    <section class="sec03">
+    <h2>공지사항영역</h2>
+    <h5>NOTICE</h5>
+    <div class="not_line"></div>
+    <div class="not_list"><a href="#">
+        <img src="./images/not_icon.png" alt="not_icon"/>
+        <p>[유류할증료]'22년 2월 국내선 유류할증료 안내'</p>
+        <span>2022.01.10</span>
+    </a></div>
+    <div class="not_list"><a href="#">
+        <img src="./images/not_icon.png" alt="not_icon"/>
+        <p>국내선 신규 정기노선 운임 공지(김포-사천 노선)</p>
+        <span>2022.01.10</span>
+    </a></div>
+    <div class="not_list"><a href="#">
+        <img src="./images/not_icon.png" alt="not_icon"/>
+        <p>동해울릉항공 고객서비스센터 운영시간 변경 안내</p>
+        <span>2022.01.10</span>
+    </a></div>
+    <div class="more"><a href="./k01.html">more</a></div>
+    </section>
+    <footer>
+    <div class="ft_gnb">
+        <ul>
+            <li><a href="#">홈페이지 이용약관</a></li>
+            <li><a href="#">여객운송약관</a></li>
+            <li><a href="#">항공교통이용자 서비스 계획</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">피해구제계획</a></li>
+            <li><a href="#">오픈라이선스</a></li>
+        </ul>
+    </div>
+    <img src="./images/logo3.png" alt="logo"/>
+    <div class="ft">
+    <address>동해울릉항공㈜&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;대표이사 최울릉&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 119-1004-112&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;통신판매업 신고 제 97-0606<br/><br/>
+        인천광역시 연수구 송도로 1004&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;고객센터 1888-8911 (오전 09시 ~ 오후 18시, 주중)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;제휴·취재문의yj@esull.co.kr
+        <br/><br/>
+        © EASTSEAULLEUNG AIR. All rights reserved.</address>
+    </div>
+    </footer>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>

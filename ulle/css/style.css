@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "mainpc.css";
+@import "mainmb.css";
+/*
+font-family: 'NanumBarunGothicExtraLight';
+font-family: 'NanumBarunGothicLight';
+font-family: 'NanumBarunGothic';
+font-family: 'NanumBarunGothicBold';
+font-family: 'NanumPen';
+*/
+a{text-decoration: none;}
+#container{overflow: hidden; width:100%; height: 100%;}
+body{font-family: 'NanumBarunGothic';}
+
+/*위로 ▲*/
+.top{
+    position: fixed;
+    right:0px; bottom: 0px;
+    background: #8cc63f;
+    width:50px; height: 45px; line-height: 45px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    z-index:99999999999;
+}
+.top>a{color:#000; font-size: 2rem; display: block;}
+
+/*중앙이미지배너*/
+#imgBanner{
+    background-image: url('../images/airpo01.png');
+    background-repeat: no-repeat ;
+    background-position: 40% top;
+    height:500px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+#imgBanner>div{
+    position: absolute;
+    bottom: 20%;
+    width:440px; height: 150px;
+    background: rgba(255,255,255, 0.9);
+    left:68%; transform: translateX(-55%);
+    color: #4d4d4d;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.3);
+}
+#imgBanner>div>h4{
+    font-family: 'NanumPen';
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/*푸터영역*/
+footer{
+    width:100%;
+    margin:0px 0px 50px ;
+    position: relative;
+}
+footer>.ft_gnb{
+    width:100%; 
+    margin: 0 auto;
+    background: #4d4d4d;
+}
+.ft_gnb>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    width:100%; margin: 0 auto;
+    padding-bottom: 25px;
+}
+.ft_gnb>ul>li{margin-top:23px;}
+.ft_gnb>ul>li>a{
+    color:#fff; 
+    display: block;
+    font-size: 15px;
+}
+.ft{width:100%; margin: 0 auto;}
+footer img{
+    width:200px;
+    position: absolute; 
+    margin-top: 40px;
+    left:50%; transform: translateX(-50%);
+}
+address{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.hidden{
+    display: none;
+}

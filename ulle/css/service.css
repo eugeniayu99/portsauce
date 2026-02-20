@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import "./sublayout.css";
+
+@import "./drop.css";
+
+.sub_pg{background: url('../images/airpt.jpg')no-repeat center 40%/cover ;}
+
+/*modile*/
+@media all and (max-width:960px) {
+    /*s01.html*/
+    /*공항서비스 카운터안내*/
+    .s01_ap{
+        width:90%; 
+        margin: 100px auto 150px;
+        text-align: center; 
+    }
+    .s01_ap>h6{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        
+    }
+    .s01_ap>p{margin-bottom: 100px; margin-left: 50px; font-size: 18px;}
+
+
+    .apcon{
+        width:100%;
+        padding-bottom: 60px;
+        margin-bottom: 50px;
+        border-bottom: 4px dotted #77a092; 
+
+    }
+    .apWrap:nth-of-type(3)>.bordercon{border-bottom:none;}
+
+    .apcon>p{
+        font-weight: bold;
+        font-size: 18px;
+        color:#4d4d4d;
+        line-height: 24px;
+    }
+    
+    .apImg{
+        width: 100%; height: 180px;
+        background: #b8b8b8;
+        margin-top: 20px;
+    }
+    
+        /*s02.html*/
+    /*수하물안내*/
+    .s02_bg{
+        width:100%; 
+        margin: 100px auto 150px; 
+        text-align: center; 
+    }
+    .s02_bg>h6{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .s02_bg>p{font-size: 18px;}
+    /*내용*/
+    .bgcon>p:nth-of-type(1){
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-top:70px;
+    }
+    .bgcon>p:nth-of-type(2){
+        color: #4d4d4d;
+        margin: 10px 0 10px;
+    }
+    .bgTxt{
+        width:90%; 
+        border: 2px solid #77a092;
+        margin:0 auto;
+    }
+    .bgTxt>p{
+        width:80%;
+        margin:20px auto;
+        line-height: 35px;
+        font-size: 17px;
+        text-align: left; 
+    }
+    
+}
+
+/*pc*/
+@media all and (min-width:960px) {
+
+    /*s01.html*/
+    /*공항서비스 카운터안내*/
+    .s01_ap{
+        width:1280px; 
+        margin: 100px auto 150px; 
+    }
+    .s01_ap>h6{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .s01_ap>p{margin-bottom: 50px; margin-left: 50px; font-size: 18px;}
+
+    .apWrap{
+        border: 2px solid #77a092;
+        display: flex;
+        height: 320px;
+        margin-bottom: 100px;
+    }
+    .apcon{
+        width:600px;
+        padding-left: 60px;
+        height: 240px;
+        margin-top:40px;
+    }
+    .apcon>p{
+        font-weight: bold;
+        font-size: 18px;
+        color:#4d4d4d;
+        line-height: 24px;
+    }
+    .bordercon{border-left: 1px solid #77a092;}
+    .apImg{
+        width: 500px; height: 180px;
+        background: #b8b8b8;
+        margin-top: 20px;
+    }
+
+    /*s02.html*/
+    /*수하물안내*/
+    .s02_bg{
+        width:1280px; 
+        margin: 100px auto 150px; 
+    }
+    .s02_bg>h6{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .s02_bg>p{font-size: 18px; margin-left: 50px;}
+    /*내용*/
+    .bgcon>p:nth-of-type(1){
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-top:70px;
+    }
+    .bgcon>p:nth-of-type(2){
+        color: #4d4d4d;
+        margin: 10px 0 10px;
+    }
+    .bgTxt{
+        width:100%; 
+        border: 2px solid #77a092;
+    
+    }
+    .bgTxt>p{
+        padding: 20px 0 20px 100px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+    
+}

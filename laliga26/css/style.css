@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* 파일명 : gnbresponsive.css
+  html에 link로 연결된 css
+ 공통으로 사용하게 되는 스타일*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import "stylepc.css"; /*pc화면일때만 쓰는거*/
+@import "stylemobile.css"; /*mobile화면일때만 쓰는거*/
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;400;500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Song+Myung&family=Yeon+Sung&display=swap');
+/*
+font-family: 'Bakbak One', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Song Myung', serif;
+font-family: 'Yeon Sung', cursive;
+*/
+
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#fff;}
+body{ 
+	margin:0 auto;
+}
+h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+
+
+/*sec07 이미지영역*/
+	.sec07{
+		width:100%;
+		height:800px;
+		background:url('../images/img06.jpeg') no-repeat 35% center/412px 600px,
+		url('../images/main06.jpg') no-repeat 60% center/500px 250px;
+		position:relative;
+	}
+	.sec07>.title{
+		width:300px; height:300px;
+		background:rgba(255,255,255,0.8);
+		box-shadow:10px 10px 10px gray;
+		position:absolute;
+		bottom:50px;
+		left:50%;
+		transform:translateX(-50%);
+	}
+	.title>h5{
+		font-size:3rem;
+		font-weight:bold;
+		text-align:center;
+		margin-top:80px;
+		font-family: 'Bakbak One', cursive;
+	}
+	.title>p{
+		font-size:1.2rem;
+		font-weight:bold;
+		text-align:center;
+		margin:50px;
+	}
+	
+/*푸터영역*/
+	footer{
+		width:100%; height:350px;
+		margin:0 auto;
+		background:black;
+		position:relative;
+	}
+	footer>a>img{
+		text-align:center;
+		width:100px;
+		position:absolute;
+		top:80px;
+		left:50%;
+		transform:translateX(-50%);		
+	}
+	footer>address{
+		width:100%;
+		text-align:center;
+		color:#fff;
+		position:absolute;
+		top:220px; left:50%;
+		transform:translateX(-50%);
+		line-height:25px;
+	}
+	
+
