@@ -254,6 +254,9 @@ section.playImg .playImg-textWrap > button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
 }
 
 .contents.champion .champion-choice h2 {
@@ -273,6 +276,7 @@ section.playImg .playImg-textWrap > button:hover {
 .contents.champion .champion-choice > p {
   font-size: 20px;
   margin-bottom: 50px;
+  
 }
 
 /* champion-choice-linkBox */
@@ -362,6 +366,9 @@ section.playImg .playImg-textWrap > button:hover {
 @media (max-width: 1420px) {
   .contents.champion {
     flex-direction: column;
+  }
+  .champion-choice-buttonBox {
+    flex-wrap: wrap;
   }
 }
 
