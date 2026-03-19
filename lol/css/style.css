@@ -520,6 +520,14 @@ nav .lnbBox li .subMenu a:hover {
 
 /* ===== 모바일: 클릭 토글 + 햄버거로 nav 열기 ===== */
 @media (max-width: 1420px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 15px);
+    background: #000;
+    z-index: 9999;
+  }
   .header-contants nav { display: none; }
   .rightBtn button.search, .rightBtn button.login { display: none; }
 
@@ -531,10 +539,10 @@ nav .lnbBox li .subMenu a:hover {
     gap: 10px;
     padding: 20px;
     background: #000;
-	position: absolute;
-	top: 79px;
-	right: 15px;
-	z-index: 999;
+    position: absolute;
+    top: 79px;
+    right: 0;
+    z-index: 999;
   }
 
   .navmenuBtn {
